@@ -1,0 +1,364 @@
+{
+  "rank": 3,
+  "season": 2026,
+  "record": "0-0",
+  "most_recent_game": {
+    "name": "Ole Miss Rebels at Mississippi State Bulldogs",
+    "shortName": "MISS @ MSST",
+    "date": "Fri, Nov 28, 12:00 PM EST",
+    "rawDate": "2025-11-28T17:00Z",
+    "isCompleted": true,
+    "opponentName": "Mississippi State Bulldogs",
+    "opponentAbbrev": "MSST",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
+    "homeAway": "@",
+    "outcome": "W",
+    "score": "38-19",
+    "network": "ABC",
+    "statusStr": "Final"
+  },
+  "all_games": [
+    {
+      "name": "Georgia State Panthers at Ole Miss Rebels",
+      "shortName": "GAST @ MISS",
+      "date": "Sat, Aug 30, 7:45 PM EDT",
+      "rawDate": "2025-08-30T23:45Z",
+      "isCompleted": true,
+      "opponentName": "Georgia State Panthers",
+      "opponentAbbrev": "GAST",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "63-7",
+      "network": "SEC Network",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Ole Miss Rebels at Kentucky Wildcats",
+      "shortName": "MISS @ UK",
+      "date": "Sat, Sep 6, 3:30 PM EDT",
+      "rawDate": "2025-09-06T19:30Z",
+      "isCompleted": true,
+      "opponentName": "Kentucky Wildcats",
+      "opponentAbbrev": "UK",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
+      "homeAway": "@",
+      "outcome": "W",
+      "score": "30-23",
+      "network": "ABC",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Arkansas Razorbacks at Ole Miss Rebels",
+      "shortName": "ARK @ MISS",
+      "date": "Sat, Sep 13, 7:00 PM EDT",
+      "rawDate": "2025-09-13T23:00Z",
+      "isCompleted": true,
+      "opponentName": "Arkansas Razorbacks",
+      "opponentAbbrev": "ARK",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "41-35",
+      "network": "ESPN",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Tulane Green Wave at Ole Miss Rebels",
+      "shortName": "TULN @ MISS",
+      "date": "Sat, Sep 20, 3:30 PM EDT",
+      "rawDate": "2025-09-20T19:30Z",
+      "isCompleted": true,
+      "opponentName": "Tulane Green Wave",
+      "opponentAbbrev": "TULN",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "45-10",
+      "network": "ESPN",
+      "statusStr": "Final"
+    },
+    {
+      "name": "LSU Tigers at Ole Miss Rebels",
+      "shortName": "LSU @ MISS",
+      "date": "Sat, Sep 27, 3:30 PM EDT",
+      "rawDate": "2025-09-27T19:30Z",
+      "isCompleted": true,
+      "opponentName": "LSU Tigers",
+      "opponentAbbrev": "LSU",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "24-19",
+      "network": "ABC",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Washington State Cougars at Ole Miss Rebels",
+      "shortName": "WSU @ MISS",
+      "date": "Sat, Oct 11, 12:45 PM EDT",
+      "rawDate": "2025-10-11T16:45Z",
+      "isCompleted": true,
+      "opponentName": "Washington State Cougars",
+      "opponentAbbrev": "WSU",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "24-21",
+      "network": "SEC Network",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Ole Miss Rebels at Georgia Bulldogs",
+      "shortName": "MISS @ UGA",
+      "date": "Sat, Oct 18, 3:30 PM EDT",
+      "rawDate": "2025-10-18T19:30Z",
+      "isCompleted": true,
+      "opponentName": "Georgia Bulldogs",
+      "opponentAbbrev": "UGA",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+      "homeAway": "@",
+      "outcome": "L",
+      "score": "43-35",
+      "network": "ABC",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Ole Miss Rebels at Oklahoma Sooners",
+      "shortName": "MISS @ OU",
+      "date": "Sat, Oct 25, 12:00 PM EDT",
+      "rawDate": "2025-10-25T16:00Z",
+      "isCompleted": true,
+      "opponentName": "Oklahoma Sooners",
+      "opponentAbbrev": "OU",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
+      "homeAway": "@",
+      "outcome": "W",
+      "score": "34-26",
+      "network": "ABC",
+      "statusStr": "Final"
+    },
+    {
+      "name": "South Carolina Gamecocks at Ole Miss Rebels",
+      "shortName": "SC @ MISS",
+      "date": "Sat, Nov 1, 7:00 PM EDT",
+      "rawDate": "2025-11-01T23:00Z",
+      "isCompleted": true,
+      "opponentName": "South Carolina Gamecocks",
+      "opponentAbbrev": "SC",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "30-14",
+      "network": "ESPN",
+      "statusStr": "Final"
+    },
+    {
+      "name": "The Citadel Bulldogs at Ole Miss Rebels",
+      "shortName": "CIT @ MISS",
+      "date": "Sat, Nov 8, 1:00 PM EST",
+      "rawDate": "2025-11-08T18:00Z",
+      "isCompleted": true,
+      "opponentName": "The Citadel Bulldogs",
+      "opponentAbbrev": "CIT",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2643.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "49-0",
+      "network": "SECN+",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Florida Gators at Ole Miss Rebels",
+      "shortName": "FLA @ MISS",
+      "date": "Sat, Nov 15, 7:00 PM EST",
+      "rawDate": "2025-11-16T00:00Z",
+      "isCompleted": true,
+      "opponentName": "Florida Gators",
+      "opponentAbbrev": "FLA",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
+      "homeAway": "vs",
+      "outcome": "W",
+      "score": "34-24",
+      "network": "ESPN",
+      "statusStr": "Final"
+    },
+    {
+      "name": "Ole Miss Rebels at Mississippi State Bulldogs",
+      "shortName": "MISS @ MSST",
+      "date": "Fri, Nov 28, 12:00 PM EST",
+      "rawDate": "2025-11-28T17:00Z",
+      "isCompleted": true,
+      "opponentName": "Mississippi State Bulldogs",
+      "opponentAbbrev": "MSST",
+      "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
+      "homeAway": "@",
+      "outcome": "W",
+      "score": "38-19",
+      "network": "ABC",
+      "statusStr": "Final"
+    }
+  ],
+  "schedule": [
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "Georgia State Panthers",
+        "abbrev": "GAST",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2247.png"
+        }
+      },
+      "date": "Sat, Aug 30, 7:45 PM EDT",
+      "location": "Final | 63-7"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": false,
+      "opposingTeam": {
+        "name": "Kentucky Wildcats",
+        "abbrev": "UK",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png"
+        }
+      },
+      "date": "Sat, Sep 6, 3:30 PM EDT",
+      "location": "Final | 30-23"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "Arkansas Razorbacks",
+        "abbrev": "ARK",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
+        }
+      },
+      "date": "Sat, Sep 13, 7:00 PM EDT",
+      "location": "Final | 41-35"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "Tulane Green Wave",
+        "abbrev": "TULN",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png"
+        }
+      },
+      "date": "Sat, Sep 20, 3:30 PM EDT",
+      "location": "Final | 45-10"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "LSU Tigers",
+        "abbrev": "LSU",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png"
+        }
+      },
+      "date": "Sat, Sep 27, 3:30 PM EDT",
+      "location": "Final | 24-19"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "Washington State Cougars",
+        "abbrev": "WSU",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png"
+        }
+      },
+      "date": "Sat, Oct 11, 12:45 PM EDT",
+      "location": "Final | 24-21"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": false,
+      "opposingTeam": {
+        "name": "Georgia Bulldogs",
+        "abbrev": "UGA",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
+        }
+      },
+      "date": "Sat, Oct 18, 3:30 PM EDT",
+      "location": "Final | 35-43"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": false,
+      "opposingTeam": {
+        "name": "Oklahoma Sooners",
+        "abbrev": "OU",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
+        }
+      },
+      "date": "Sat, Oct 25, 12:00 PM EDT",
+      "location": "Final | 34-26"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "South Carolina Gamecocks",
+        "abbrev": "SC",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png"
+        }
+      },
+      "date": "Sat, Nov 1, 7:00 PM EDT",
+      "location": "Final | 30-14"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "The Citadel Bulldogs",
+        "abbrev": "CIT",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2643.png"
+        }
+      },
+      "date": "Sat, Nov 8, 1:00 PM EST",
+      "location": "Final | 49-0"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": true,
+      "opposingTeam": {
+        "name": "Florida Gators",
+        "abbrev": "FLA",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
+        }
+      },
+      "date": "Sat, Nov 15, 7:00 PM EST",
+      "location": "Final | 34-24"
+    },
+    {
+      "isCompleted": true,
+      "isHomeGame": false,
+      "opposingTeam": {
+        "name": "Mississippi State Bulldogs",
+        "abbrev": "MSST",
+        "images": {
+          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"
+        }
+      },
+      "date": "Fri, Nov 28, 12:00 PM EST",
+      "location": "Final | 38-19"
+    }
+  ],
+  "images": {
+    "default": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png"
+  },
+  "name": "Ole Miss Rebels"
+}

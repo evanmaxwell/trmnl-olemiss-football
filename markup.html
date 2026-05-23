@@ -1,0 +1,104 @@
+<style>
+  #next-game {
+    margin: auto;
+  }
+  #next-game img, #no-games img {
+    width: 38cqw;
+    height: 38cqw;
+    max-width: 160px;
+    max-height: 160px;
+    object-fit: contain;
+  }
+  #upcoming-games {
+    margin: auto;
+  }
+  .upcoming-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  #upcoming-games img {
+    width: 11cqw;
+    height: 11cqw;
+    max-width: 48px;
+    max-height: 48px;
+    object-fit: contain;
+  }
+</style>
+
+<div class="layout">
+  {% if schedule.size > 0 %}
+    <div class="columns">
+      
+      <!-- HERO COLUMN (Left - Next Game) -->
+      <div id="next-game" class="column">
+        {% assign next_event = schedule[0] %}
+        <div class="flex flex--col flex--center text--center">
+          <span class="label label--primary text--uppercase text--bold mb--3">Up Next</span>
+          {% if next_event.opposingTeam.images.small %}
+            <img class="image" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
+          {% endif %}
+          <div class="flex flex--col mt--3">
+            <p class="title title--medium text--bold">
+              {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.name }}
+            </p>
+            <p class="description mt--1">{{ next_event.date }}</p>
+            <p class="label label--small label--gray mt--2">{{ next_event.location }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPCOMING LIST COLUMN (Right - Schedule) -->
+      {% if schedule.size > 1 %}
+        <div id="upcoming-games" class="column">
+          <span class="label label--small label--underline mb--2">Upcoming Games</span>
+          <div class="list" data-list-limit="true" data-list-hidden-count="true" data-list-max-columns="1">
+            {% for event in schedule offset:1 limit:4 %}
+              <div class="item py--1 px--2 mb--1 border--bottom border--bottom-10">
+                <div class="meta"></div>
+                <div class="upcoming-row">
+                  <div class="content flex flex--col flex--left grow">
+                    <p class="title title--small">
+                      {% if event.isHomeGame %}
+                        <span class="label label--small label--primary text--bold mr--1">Home</span>
+                      {% else %}
+                        <span class="label label--small label--outline text--bold mr--1">Away</span>
+                      {% endif %}
+                      <span>{{ event.opposingTeam.name }}</span>
+                    </p>
+                    <p class="description mt--1">{{ event.date }}</p>
+                    <p class="label label--small label--gray mt--1">{{ event.location }}</p>
+                  </div>
+                  {% if event.opposingTeam.images.small %}
+                    <img class="image" src="{{ event.opposingTeam.images.small }}" alt="{{ event.opposingTeam.name }} logo" />
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      
+    </div>
+  {% else %}
+    <!-- OFFSEASON PANEL (When schedule is empty) -->
+    <div class="flex flex--col flex--center text--center my--auto p--4" id="no-games">
+      <span class="label label--gray text--uppercase text--bold mb--3">Season Concluded</span>
+      <img class="image" src="{{ images.default }}" alt="Ole Miss logo" />
+      <div class="flex flex--col mt--3">
+        <p class="title title--medium text--bold">Hotty Toddy!</p>
+        <p class="description mt--1">The Rebels season has concluded.</p>
+        <p class="label label--outline label--small mt--2">Season Record: {{ record }}</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<!-- TITLE BAR (Standard V3, using standard crisp vector SVG logo) -->
+<div class="title_bar">
+  <img class="image image-stroke" src="data:image/svg+xml;base64,{{ svg_logo | base64_encode }}" />
+  <span class="title">{{ name }}</span>
+  <span class="instance">{% if rank != 'NR' %}#{{ rank }} | {% endif %}{{ season }} | Record: {{ record }}</span>
+</div>

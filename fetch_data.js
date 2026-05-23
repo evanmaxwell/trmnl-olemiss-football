@@ -12,15 +12,22 @@ async function fetchJson(url) {
 }
 
 async function getSchedule() {
-  // Try current year first
+  // Try current year regular season first (seasontype=2)
   let data = await fetchJson(
-    `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR}`,
+    `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR}&seasontype=2`,
   );
 
-  // If no events and it's early in the year, check the previous year (to show last season's results/bowl game)
-  if (data.events.length === 0) {
+  // If no events, try without seasontype for current year
+  if (!data.events || data.events.length === 0) {
     data = await fetchJson(
-      `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR - 1}`,
+      `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR}`,
+    );
+  }
+
+  // If still no events, check the previous year regular season
+  if (!data.events || data.events.length === 0) {
+    data = await fetchJson(
+      `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR - 1}&seasontype=2`,
     );
   }
   return data;

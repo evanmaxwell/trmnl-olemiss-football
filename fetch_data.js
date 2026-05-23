@@ -190,10 +190,24 @@ async function main() {
     let activeUpcoming = inspirationSchedule.filter(g => !g.isCompleted);
     let finalSchedule = activeUpcoming; // Empty array during offseason to trigger the offseason panel
 
+    // Determine correct season year from the events
+    let seasonYear = CURRENT_YEAR;
+    if (events.length > 0) {
+      seasonYear = new Date(events[0].date).getFullYear();
+    }
+
+    // Determine correct record (if 2025 offseason, concluded at 13-2)
+    let seasonRecord = "0-0";
+    if (seasonYear === 2025) {
+      seasonRecord = "13-2";
+    } else {
+      seasonRecord = scheduleData.team?.record?.[0]?.displayValue || "0-0";
+    }
+
     const payload = {
       rank: currentRank,
-      season: scheduleData.season?.year || CURRENT_YEAR,
-      record: scheduleData.team?.record?.[0]?.displayValue || "0-0", // Year To Date record
+      season: seasonYear,
+      record: seasonRecord,
       most_recent_game: mostRecentGame,
       next_game: nextGame,
       all_games: processedGames,

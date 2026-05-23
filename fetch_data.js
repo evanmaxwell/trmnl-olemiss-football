@@ -11,25 +11,43 @@ async function fetchJson(url) {
   return res.json();
 }
 
+async function fetchYearSchedule(year) {
+  try {
+    // Fetch regular season (seasontype=2)
+    const regData = await fetchJson(
+      `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${year}&seasontype=2`,
+    );
+    // Fetch postseason (seasontype=3) for bowl games / CFP matchups
+    let postData = { events: [] };
+    try {
+      postData = await fetchJson(
+        `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${year}&seasontype=3`,
+      );
+    } catch (e) {
+      // Fallback silently if no postseason data is found
+    }
+
+    const regEvents = regData.events || [];
+    const postEvents = postData.events || [];
+
+    return {
+      ...regData,
+      events: [...regEvents, ...postEvents]
+    };
+  } catch (error) {
+    return { events: [] };
+  }
+}
+
 async function getSchedule() {
-  // Try current year regular season first (seasontype=2)
-  let data = await fetchJson(
-    `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR}&seasontype=2`,
-  );
+  // Try current year regular and postseason schedule first
+  let data = await fetchYearSchedule(CURRENT_YEAR);
 
-  // If no events, try without seasontype for current year
+  // If no events in the current year schedule, fall back to the previous year
   if (!data.events || data.events.length === 0) {
-    data = await fetchJson(
-      `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR}`,
-    );
+    data = await fetchYearSchedule(CURRENT_YEAR - 1);
   }
 
-  // If still no events, check the previous year regular season
-  if (!data.events || data.events.length === 0) {
-    data = await fetchJson(
-      `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}/schedule?season=${CURRENT_YEAR - 1}&seasontype=2`,
-    );
-  }
   return data;
 }
 
@@ -150,6 +168,68 @@ async function main() {
       }
     });
 
+    // Determine season year
+    let seasonYear = CURRENT_YEAR;
+    if (events.length > 0) {
+      seasonYear = new Date(events[0].date).getFullYear();
+    }
+
+    // If no completed games in the current season (e.g. preseason), fetch previous season's last completed game
+    if (!mostRecentGame && seasonYear > 2000) {
+      try {
+        const prevYearData = await fetchYearSchedule(seasonYear - 1);
+        if (prevYearData.events && prevYearData.events.length > 0) {
+          let lastCompletedEvent = null;
+          for (let i = prevYearData.events.length - 1; i >= 0; i--) {
+            if (prevYearData.events[i].competitions[0].status.type.completed) {
+              lastCompletedEvent = prevYearData.events[i];
+              break;
+            }
+          }
+          if (lastCompletedEvent) {
+            const event = lastCompletedEvent;
+            const isCompleted = true;
+            const homeTeam = event.competitions[0].competitors.find(c => c.homeAway === 'home');
+            const awayTeam = event.competitions[0].competitors.find(c => c.homeAway === 'away');
+            const oleMiss = homeTeam.id === OLE_MISS_TEAM_ID ? homeTeam : awayTeam;
+            const opponent = homeTeam.id === OLE_MISS_TEAM_ID ? awayTeam : homeTeam;
+
+            let outcome = "";
+            let scoreStr = "";
+            const omScore = parseInt(oleMiss.score?.value || 0, 10);
+            const opponentScore = parseInt(opponent.score?.value || 0, 10);
+            if (omScore > opponentScore) outcome = "W";
+            else if (omScore < opponentScore) outcome = "L";
+            else outcome = "T";
+            scoreStr = `${Math.max(omScore, opponentScore)}-${Math.min(omScore, opponentScore)}`;
+
+            let network = "TBD";
+            if (event.competitions[0].broadcasts && event.competitions[0].broadcasts.length > 0) {
+              network = event.competitions[0].broadcasts[0].media?.shortName || event.competitions[0].broadcasts[0].names?.[0] || "TBD";
+            }
+
+            mostRecentGame = {
+              name: event.name,
+              shortName: event.shortName,
+              date: formatDateET(event.date),
+              rawDate: event.date,
+              isCompleted: true,
+              opponentName: opponent.team.displayName,
+              opponentAbbrev: opponent.team.abbreviation,
+              opponentLogo: opponent.team.logos?.[0]?.href || "",
+              homeAway: oleMiss.homeAway === "home" ? "vs" : "@",
+              outcome: outcome,
+              score: scoreStr,
+              network: network,
+              statusStr: event.competitions[0].status.type.shortDetail,
+            };
+          }
+        }
+      } catch (e) {
+        // Fallback silently if unable to fetch previous season's last game
+      }
+    }
+
     // If we're past the season, nextGame might still be null, but maybe there's an uncompleted game (bowl/championship)
     // that is technically in the past according to our `now` but hasn't played or was cancelled?
     // For safety, just use the first non-completed game if nextGame is still null
@@ -197,11 +277,7 @@ async function main() {
     let activeUpcoming = inspirationSchedule.filter(g => !g.isCompleted);
     let finalSchedule = activeUpcoming; // Empty array during offseason to trigger the offseason panel
 
-    // Determine correct season year from the events
-    let seasonYear = CURRENT_YEAR;
-    if (events.length > 0) {
-      seasonYear = new Date(events[0].date).getFullYear();
-    }
+    // seasonYear is already determined above
 
     // Determine correct record (if 2025 offseason, concluded at 13-2)
     let seasonRecord = "0-0";

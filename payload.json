@@ -2,7 +2,21 @@
   "rank": 3,
   "season": 2026,
   "record": "0-0",
-  "most_recent_game": null,
+  "most_recent_game": {
+    "name": "Miami Hurricanes at Ole Miss Rebels",
+    "shortName": "MIA VS MISS",
+    "date": "Thu, Jan 8, 7:30 PM EST",
+    "rawDate": "2026-01-09T00:30Z",
+    "isCompleted": true,
+    "opponentName": "Miami Hurricanes",
+    "opponentAbbrev": "MIA",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+    "homeAway": "vs",
+    "outcome": "L",
+    "score": "31-27",
+    "network": "ESPN",
+    "statusStr": "Final"
+  },
   "next_game": {
     "name": "Louisville Cardinals at Ole Miss Rebels",
     "shortName": "LOU VS MISS",

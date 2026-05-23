@@ -188,7 +188,7 @@ async function main() {
     });
 
     let activeUpcoming = inspirationSchedule.filter(g => !g.isCompleted);
-    let finalSchedule = activeUpcoming.length > 0 ? activeUpcoming : inspirationSchedule;
+    let finalSchedule = activeUpcoming; // Empty array during offseason to trigger the offseason panel
 
     const payload = {
       rank: currentRank,

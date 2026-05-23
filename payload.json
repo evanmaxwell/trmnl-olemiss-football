@@ -51,7 +51,7 @@
     {
       "name": "Charlotte 49ers at Ole Miss Rebels",
       "shortName": "CLT @ MISS",
-      "date": "Sat, Sep 12, 12:00 AM EDT",
+      "date": "Sat, Sep 12 at TBD",
       "rawDate": "2026-09-12T04:00Z",
       "isCompleted": false,
       "opponentName": "Charlotte 49ers",
@@ -81,7 +81,7 @@
     {
       "name": "Ole Miss Rebels at Florida Gators",
       "shortName": "MISS @ FLA",
-      "date": "Sat, Sep 26, 12:00 AM EDT",
+      "date": "Sat, Sep 26 at TBD",
       "rawDate": "2026-09-26T04:00Z",
       "isCompleted": false,
       "opponentName": "Florida Gators",
@@ -96,7 +96,7 @@
     {
       "name": "Ole Miss Rebels at Vanderbilt Commodores",
       "shortName": "MISS @ VAN",
-      "date": "Sat, Oct 10, 12:00 AM EDT",
+      "date": "Sat, Oct 10 at TBD",
       "rawDate": "2026-10-10T04:00Z",
       "isCompleted": false,
       "opponentName": "Vanderbilt Commodores",
@@ -111,7 +111,7 @@
     {
       "name": "Missouri Tigers at Ole Miss Rebels",
       "shortName": "MIZ @ MISS",
-      "date": "Sat, Oct 17, 12:00 AM EDT",
+      "date": "Sat, Oct 17 at TBD",
       "rawDate": "2026-10-17T04:00Z",
       "isCompleted": false,
       "opponentName": "Missouri Tigers",
@@ -126,7 +126,7 @@
     {
       "name": "Ole Miss Rebels at Texas Longhorns",
       "shortName": "MISS @ TEX",
-      "date": "Sat, Oct 24, 12:00 AM EDT",
+      "date": "Sat, Oct 24 at TBD",
       "rawDate": "2026-10-24T04:00Z",
       "isCompleted": false,
       "opponentName": "Texas Longhorns",
@@ -141,7 +141,7 @@
     {
       "name": "Auburn Tigers at Ole Miss Rebels",
       "shortName": "AUB @ MISS",
-      "date": "Sat, Oct 31, 12:00 AM EDT",
+      "date": "Sat, Oct 31 at TBD",
       "rawDate": "2026-10-31T04:00Z",
       "isCompleted": false,
       "opponentName": "Auburn Tigers",
@@ -156,7 +156,7 @@
     {
       "name": "Georgia Bulldogs at Ole Miss Rebels",
       "shortName": "UGA @ MISS",
-      "date": "Sat, Nov 7, 12:00 AM EST",
+      "date": "Sat, Nov 7 at TBD",
       "rawDate": "2026-11-07T05:00Z",
       "isCompleted": false,
       "opponentName": "Georgia Bulldogs",
@@ -171,7 +171,7 @@
     {
       "name": "Ole Miss Rebels at Oklahoma Sooners",
       "shortName": "MISS @ OU",
-      "date": "Sat, Nov 14, 12:00 AM EST",
+      "date": "Sat, Nov 14 at TBD",
       "rawDate": "2026-11-14T05:00Z",
       "isCompleted": false,
       "opponentName": "Oklahoma Sooners",
@@ -186,7 +186,7 @@
     {
       "name": "Wofford Terriers at Ole Miss Rebels",
       "shortName": "WOF @ MISS",
-      "date": "Sat, Nov 21, 12:00 AM EST",
+      "date": "Sat, Nov 21 at TBD",
       "rawDate": "2026-11-21T05:00Z",
       "isCompleted": false,
       "opponentName": "Wofford Terriers",
@@ -238,7 +238,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png"
         }
       },
-      "date": "Sat, Sep 12, 12:00 AM EDT",
+      "date": "Sat, Sep 12 at TBD",
       "location": "Oxford, MS | TBD"
     },
     {
@@ -264,7 +264,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
         }
       },
-      "date": "Sat, Sep 26, 12:00 AM EDT",
+      "date": "Sat, Sep 26 at TBD",
       "location": "Gainesville, FL | TBD"
     },
     {
@@ -277,7 +277,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png"
         }
       },
-      "date": "Sat, Oct 10, 12:00 AM EDT",
+      "date": "Sat, Oct 10 at TBD",
       "location": "Nashville, TN | TBD"
     },
     {
@@ -290,7 +290,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
         }
       },
-      "date": "Sat, Oct 17, 12:00 AM EDT",
+      "date": "Sat, Oct 17 at TBD",
       "location": "Oxford, MS | TBD"
     },
     {
@@ -303,7 +303,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
         }
       },
-      "date": "Sat, Oct 24, 12:00 AM EDT",
+      "date": "Sat, Oct 24 at TBD",
       "location": "Austin, TX | TBD"
     },
     {
@@ -316,7 +316,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png"
         }
       },
-      "date": "Sat, Oct 31, 12:00 AM EDT",
+      "date": "Sat, Oct 31 at TBD",
       "location": "Oxford, MS | TBD"
     },
     {
@@ -329,7 +329,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
         }
       },
-      "date": "Sat, Nov 7, 12:00 AM EST",
+      "date": "Sat, Nov 7 at TBD",
       "location": "Oxford, MS | TBD"
     },
     {
@@ -342,7 +342,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
         }
       },
-      "date": "Sat, Nov 14, 12:00 AM EST",
+      "date": "Sat, Nov 14 at TBD",
       "location": "Norman, OK | TBD"
     },
     {
@@ -355,7 +355,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png"
         }
       },
-      "date": "Sat, Nov 21, 12:00 AM EST",
+      "date": "Sat, Nov 21 at TBD",
       "location": "Oxford, MS | TBD"
     },
     {

@@ -49,11 +49,11 @@
             
             {% if most_recent_game %}
               <div class="border--top border--top-10 mt--3 pt--3 text--center grow w--full">
-                <span class="label label--small label--gray mb--1">Last Game</span>
-                <div class="flex flex--row flex--center flex--justify-center gap--2 mt--1">
-                  <span class="label label--bold {% if most_recent_game.outcome == 'W' %}label--success{% else %}label--error{% endif %}">{{ most_recent_game.outcome }}</span>
-                  <span class="title title--small text--bold">{{ most_recent_game.score }}</span>
-                  <span class="description text--uppercase text--semibold">{% if most_recent_game.homeAway == 'vs' %}vs{% else %}@{% endif %}{{ most_recent_game.opponentAbbrev }}</span>
+                <span class="label label--small label--gray mb--1">Previous Game</span>
+                <div class="flex flex--row flex--center flex--justify-center mt--1">
+                  <span class="label label--bold {% if most_recent_game.outcome == 'W' %}label--success{% else %}label--error{% endif %} mr--3">{{ most_recent_game.outcome }}</span>
+                  <span class="title title--small text--bold mr--3">{{ most_recent_game.score }}</span>
+                  <span class="description text--semibold">{% if most_recent_game.homeAway == 'vs' %}vs {% else %}@ {% endif %}{{ most_recent_game.opponentName }}</span>
                 </div>
               </div>
             {% endif %}

@@ -58,9 +58,17 @@ async function getTop25Rankings() {
   return data;
 }
 
-function formatDateET(dateString) {
+function formatDateET(dateString, isTBD = false) {
   const d = new Date(dateString);
-  // Example output: "Sat, Sep 2 at 3:30 PM ET"
+  if (isTBD) {
+    const options = {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      timeZone: "America/New_York",
+    };
+    return d.toLocaleString("en-US", options) + " at TBD";
+  }
   const options = {
     weekday: "short",
     month: "short",
@@ -142,10 +150,12 @@ async function main() {
           broadcasts[0].media?.shortName || broadcasts[0].names?.[0] || "TBD";
       }
 
+      const isTBD = event.competitions[0].status.type.shortDetail === "TBD" || !event.competitions[0].timeValid;
+
       const gameObj = {
         name: event.name,
         shortName: event.shortName,
-        date: formatDateET(event.date),
+        date: formatDateET(event.date, isTBD),
         rawDate: event.date,
         isCompleted: isCompleted,
         opponentName: opponent.team.displayName,
@@ -259,6 +269,8 @@ async function main() {
         network = event.competitions[0].broadcasts[0].media?.shortName || event.competitions[0].broadcasts[0].names?.[0] || "TBD";
       }
 
+      const isTBD = event.competitions[0].status.type.shortDetail === "TBD" || !event.competitions[0].timeValid;
+
       inspirationSchedule.push({
         isCompleted: isCompleted,
         isHomeGame: oleMiss.homeAway === "home",
@@ -269,7 +281,7 @@ async function main() {
             small: opponent.team.logos?.[0]?.href || ""
           }
         },
-        date: formatDateET(event.date),
+        date: formatDateET(event.date, isTBD),
         location: isCompleted ? `Final | ${oleMiss.score?.value}-${opponent.score?.value}` : `${venueStr} | ${network}`
       });
     });

@@ -1,0 +1,70 @@
+<style>
+  #next-game-quad, #previous-game-quad {
+    margin: auto;
+  }
+  #next-game-quad img, #previous-game-quad img, #no-games img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+</style>
+
+<div class="layout">
+  {% if schedule.size > 0 %}
+    <div class="columns">
+      
+      <!-- PREVIOUS GAME COLUMN (Left) -->
+      {% if most_recent_game %}
+        <div id="previous-game-quad" class="column">
+          <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
+            <span class="label label--gray label--xsmall text--bold text--uppercase mb--1">Previous</span>
+            {% if most_recent_game.opponentLogo %}
+              <img class="image mb--1" src="{{ most_recent_game.opponentLogo }}" alt="{{ most_recent_game.opponentName }} logo" />
+            {% endif %}
+            <p class="title title--xsmall text--bold">
+              {% if most_recent_game.homeAway == 'vs' %}vs{% else %}@{% endif %} {{ most_recent_game.opponentAbbrev }}
+            </p>
+            <p class="description description--xsmall text--bold mt--1">
+              {{ most_recent_game.outcome }} ({{ most_recent_game.score }})
+            </p>
+          </div>
+        </div>
+      {% endif %}
+
+      <!-- HERO COLUMN (Right - Next Game) -->
+      <div id="next-game-quad" class="column">
+        {% assign next_event = schedule[0] %}
+        <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
+          <span class="label label--primary label--xsmall text--bold text--uppercase mb--1">Up Next</span>
+          {% if next_event.opposingTeam.images.small %}
+            <img class="image mb--1" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
+          {% endif %}
+          <p class="title title--xsmall text--bold">
+            {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.abbrev }}
+          </p>
+          <p class="description description--xsmall mt--1">
+            {{ next_event.date | replace: ' EDT', '' | replace: ' EST', '' | replace: ' PDT', '' | replace: ' PST', '' }}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  {% else %}
+    <!-- OFFSEASON PANEL (When schedule is empty) -->
+    <div class="flex flex--col flex--center text--center my--auto p--2 bg--white" id="no-games">
+      <span class="label label--gray text--uppercase text--bold mb--1">Season Concluded</span>
+      <img class="image" src="{{ images.default }}" style="width: 48px; height: 48px;" alt="Ole Miss logo" />
+      <div class="flex flex--col mt--1">
+        <p class="title title--xsmall text--bold">Hotty Toddy!</p>
+        <p class="label label--outline label--xsmall mt--1">Record: {{ record }}</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<!-- TITLE BAR -->
+<div class="title_bar">
+  <img class="image image-stroke" src="data:image/svg+xml;base64,{{ svg_logo | base64_encode }}" />
+  <span class="title">{{ name }}</span>
+  <span class="instance">{% if rank != 'NR' %}#{{ rank }} | {{ record }}{% endif %}</span>
+</div>

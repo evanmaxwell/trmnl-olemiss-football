@@ -93,9 +93,9 @@ Under the **Shared Markup** tab in the TRMNL editor, add the vector branding blo
 #### Size Layouts
 In the markup editor tabs, copy and apply the layout code:
 - **Full Size (800x480)**: Paste the contents of `markup.html`.
-- **Half Horizontal (800x240)**: Custom half-row styling.
-- **Half Vertical (400x480)**: Vertical split styling.
-- **Quadrant (400x240)**: Compact hero match preview styling.
+- **Half Horizontal (800x240)**: Paste the contents of `markup_half_horizontal.html`.
+- **Half Vertical (400x480)**: Paste the contents of `markup_half_vertical.html`.
+- **Quadrant (400x240)**: Paste the contents of `markup_quadrant.html`.
 
 ---
 

@@ -51,8 +51,8 @@
     {
       "name": "Charlotte 49ers at Ole Miss Rebels",
       "shortName": "CLT @ MISS",
-      "date": "Sat, Sep 12 at TBD",
-      "rawDate": "2026-09-12T04:00Z",
+      "date": "Sat, Sep 12, 7:45 PM EDT",
+      "rawDate": "2026-09-12T23:45Z",
       "isCompleted": false,
       "opponentName": "Charlotte 49ers",
       "opponentAbbrev": "CLT",
@@ -61,7 +61,7 @@
       "outcome": "",
       "score": "",
       "network": "TBD",
-      "statusStr": "TBD"
+      "statusStr": "9/12 - 7:45 PM EDT"
     },
     {
       "name": "LSU Tigers at Ole Miss Rebels",
@@ -238,7 +238,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png"
         }
       },
-      "date": "Sat, Sep 12 at TBD",
+      "date": "Sat, Sep 12, 7:45 PM EDT",
       "location": "Oxford, MS | TBD"
     },
     {

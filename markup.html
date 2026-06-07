@@ -66,8 +66,8 @@
         <div id="upcoming-games" class="column">
           <span class="label label--small label--underline mb--2">Upcoming Games</span>
           <div class="list" data-list-limit="true" data-list-hidden-count="true" data-list-max-columns="1">
-            {% for event in schedule offset:1 limit:4 %}
-              <div class="item py--1 px--2 mb--1 border--bottom border--bottom-10">
+            {% for event in schedule offset:1 limit:8 %}
+              <div class="item py--1 px--2 mb--1 border--bottom border--bottom-10{% if forloop.index0 >= 4 %} hidden lg:visible{% endif %}">
                 <div class="meta"></div>
                 <div class="upcoming-row">
                   <div class="content flex flex--col flex--left grow">

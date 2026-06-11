@@ -186,8 +186,8 @@
     {
       "name": "Wofford Terriers at Ole Miss Rebels",
       "shortName": "WOF @ MISS",
-      "date": "Sat, Nov 21 at TBD",
-      "rawDate": "2026-11-21T05:00Z",
+      "date": "Sat, Nov 21, 12:00 PM EST",
+      "rawDate": "2026-11-21T17:00Z",
       "isCompleted": false,
       "opponentName": "Wofford Terriers",
       "opponentAbbrev": "WOF",
@@ -195,8 +195,8 @@
       "homeAway": "vs",
       "outcome": "",
       "score": "",
-      "network": "TBD",
-      "statusStr": "TBD"
+      "network": "SECN+",
+      "statusStr": "11/21 - 12:00 PM EST"
     },
     {
       "name": "Mississippi State Bulldogs at Ole Miss Rebels",
@@ -355,8 +355,8 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png"
         }
       },
-      "date": "Sat, Nov 21 at TBD",
-      "location": "Oxford, MS | TBD"
+      "date": "Sat, Nov 21, 12:00 PM EST",
+      "location": "Oxford, MS | SECN+"
     },
     {
       "isCompleted": false,

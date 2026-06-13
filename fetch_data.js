@@ -296,6 +296,9 @@ async function main() {
         opposingTeam: {
           name: opponent.team.displayName,
           abbrev: opponent.team.abbreviation,
+          curatedRank: {
+            current: opponent.curatedRank?.current || 99
+          },
           images: {
             small: opponent.team.logos?.[0]?.href || ""
           }

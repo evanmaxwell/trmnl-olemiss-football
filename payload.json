@@ -2,6 +2,7 @@
   "rank": 3,
   "season": 2026,
   "record": "0-0",
+  "standingSummary": "1st in SEC",
   "most_recent_game": {
     "name": "Miami Hurricanes at Ole Miss Rebels",
     "shortName": "MIA VS MISS",
@@ -23,6 +24,7 @@
     "date": "Sun, Sep 6, 7:30 PM EDT",
     "rawDate": "2026-09-06T23:30Z",
     "isCompleted": false,
+    "opponentId": "97",
     "opponentName": "Louisville Cardinals",
     "opponentAbbrev": "LOU",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
@@ -30,7 +32,10 @@
     "outcome": "",
     "score": "",
     "network": "ABC",
-    "statusStr": "9/6 - 7:30 PM EDT"
+    "statusStr": "9/6 - 7:30 PM EDT",
+    "oleMissStanding": "1st in SEC",
+    "opponentStanding": "7th in ACC",
+    "opponentRecord": "0-0"
   },
   "all_games": [
     {
@@ -39,6 +44,7 @@
       "date": "Sun, Sep 6, 7:30 PM EDT",
       "rawDate": "2026-09-06T23:30Z",
       "isCompleted": false,
+      "opponentId": "97",
       "opponentName": "Louisville Cardinals",
       "opponentAbbrev": "LOU",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
@@ -46,7 +52,10 @@
       "outcome": "",
       "score": "",
       "network": "ABC",
-      "statusStr": "9/6 - 7:30 PM EDT"
+      "statusStr": "9/6 - 7:30 PM EDT",
+      "oleMissStanding": "1st in SEC",
+      "opponentStanding": "7th in ACC",
+      "opponentRecord": "0-0"
     },
     {
       "name": "Charlotte 49ers at Ole Miss Rebels",
@@ -54,6 +63,7 @@
       "date": "Sat, Sep 12, 7:45 PM EDT",
       "rawDate": "2026-09-12T23:45Z",
       "isCompleted": false,
+      "opponentId": "2429",
       "opponentName": "Charlotte 49ers",
       "opponentAbbrev": "CLT",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
@@ -69,6 +79,7 @@
       "date": "Sat, Sep 19, 7:30 PM EDT",
       "rawDate": "2026-09-19T23:30Z",
       "isCompleted": false,
+      "opponentId": "99",
       "opponentName": "LSU Tigers",
       "opponentAbbrev": "LSU",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
@@ -84,6 +95,7 @@
       "date": "Sat, Sep 26 at TBD",
       "rawDate": "2026-09-26T04:00Z",
       "isCompleted": false,
+      "opponentId": "57",
       "opponentName": "Florida Gators",
       "opponentAbbrev": "FLA",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
@@ -99,6 +111,7 @@
       "date": "Sat, Oct 10 at TBD",
       "rawDate": "2026-10-10T04:00Z",
       "isCompleted": false,
+      "opponentId": "238",
       "opponentName": "Vanderbilt Commodores",
       "opponentAbbrev": "VAN",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
@@ -114,6 +127,7 @@
       "date": "Sat, Oct 17 at TBD",
       "rawDate": "2026-10-17T04:00Z",
       "isCompleted": false,
+      "opponentId": "142",
       "opponentName": "Missouri Tigers",
       "opponentAbbrev": "MIZ",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
@@ -129,6 +143,7 @@
       "date": "Sat, Oct 24 at TBD",
       "rawDate": "2026-10-24T04:00Z",
       "isCompleted": false,
+      "opponentId": "251",
       "opponentName": "Texas Longhorns",
       "opponentAbbrev": "TEX",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
@@ -144,6 +159,7 @@
       "date": "Sat, Oct 31 at TBD",
       "rawDate": "2026-10-31T04:00Z",
       "isCompleted": false,
+      "opponentId": "2",
       "opponentName": "Auburn Tigers",
       "opponentAbbrev": "AUB",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
@@ -159,6 +175,7 @@
       "date": "Sat, Nov 7 at TBD",
       "rawDate": "2026-11-07T05:00Z",
       "isCompleted": false,
+      "opponentId": "61",
       "opponentName": "Georgia Bulldogs",
       "opponentAbbrev": "UGA",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
@@ -174,6 +191,7 @@
       "date": "Sat, Nov 14 at TBD",
       "rawDate": "2026-11-14T05:00Z",
       "isCompleted": false,
+      "opponentId": "201",
       "opponentName": "Oklahoma Sooners",
       "opponentAbbrev": "OU",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
@@ -189,6 +207,7 @@
       "date": "Sat, Nov 21, 12:00 PM EST",
       "rawDate": "2026-11-21T17:00Z",
       "isCompleted": false,
+      "opponentId": "2747",
       "opponentName": "Wofford Terriers",
       "opponentAbbrev": "WOF",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
@@ -204,6 +223,7 @@
       "date": "Fri, Nov 27, 12:00 PM EST",
       "rawDate": "2026-11-27T17:00Z",
       "isCompleted": false,
+      "opponentId": "344",
       "opponentName": "Mississippi State Bulldogs",
       "opponentAbbrev": "MSST",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
@@ -221,6 +241,9 @@
       "opposingTeam": {
         "name": "Louisville Cardinals",
         "abbrev": "LOU",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png"
         }
@@ -234,6 +257,9 @@
       "opposingTeam": {
         "name": "Charlotte 49ers",
         "abbrev": "CLT",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png"
         }
@@ -247,6 +273,9 @@
       "opposingTeam": {
         "name": "LSU Tigers",
         "abbrev": "LSU",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png"
         }
@@ -260,6 +289,9 @@
       "opposingTeam": {
         "name": "Florida Gators",
         "abbrev": "FLA",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
         }
@@ -273,6 +305,9 @@
       "opposingTeam": {
         "name": "Vanderbilt Commodores",
         "abbrev": "VAN",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png"
         }
@@ -286,6 +321,9 @@
       "opposingTeam": {
         "name": "Missouri Tigers",
         "abbrev": "MIZ",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
         }
@@ -299,6 +337,9 @@
       "opposingTeam": {
         "name": "Texas Longhorns",
         "abbrev": "TEX",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
         }
@@ -312,6 +353,9 @@
       "opposingTeam": {
         "name": "Auburn Tigers",
         "abbrev": "AUB",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png"
         }
@@ -325,6 +369,9 @@
       "opposingTeam": {
         "name": "Georgia Bulldogs",
         "abbrev": "UGA",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
         }
@@ -338,6 +385,9 @@
       "opposingTeam": {
         "name": "Oklahoma Sooners",
         "abbrev": "OU",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
         }
@@ -351,6 +401,9 @@
       "opposingTeam": {
         "name": "Wofford Terriers",
         "abbrev": "WOF",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png"
         }
@@ -364,6 +417,9 @@
       "opposingTeam": {
         "name": "Mississippi State Bulldogs",
         "abbrev": "MSST",
+        "curatedRank": {
+          "current": 99
+        },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"
         }

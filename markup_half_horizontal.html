@@ -18,7 +18,7 @@
         <div id="previous-game" class="column">
           <div class="flex flex--row flex--center-y gap--small h--full">
             {% if most_recent_game.opponentLogo %}
-              <img class="image" src="{{ most_recent_game.opponentLogo }}" alt="{{ most_recent_game.opponentName }} logo" />
+              <img class="image image-dither" src="{{ most_recent_game.opponentLogo }}" alt="{{ most_recent_game.opponentName }} logo" />
             {% endif %}
             <div class="flex flex--col">
               <span class="label label--gray label--xsmall text--bold text--uppercase w--fit">Previous</span>
@@ -37,7 +37,7 @@
         {% assign next_event = schedule[0] %}
         <div class="flex flex--row flex--center-y gap--small h--full">
           {% if next_event.opposingTeam.images.small %}
-            <img class="image" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
+            <img class="image image-dither" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
           {% endif %}
           <div class="flex flex--col">
             <span class="label label--primary label--xsmall text--bold text--uppercase w--fit">Up Next</span>
@@ -55,7 +55,7 @@
     <!-- OFFSEASON PANEL (When schedule is empty) -->
     <div class="flex flex--col flex--center text--center my--auto p--2 bg--white" id="no-games">
       <span class="label label--gray text--uppercase text--bold mb--1">Season Concluded</span>
-      <img class="image" src="{{ images.default }}" alt="Ole Miss logo" />
+      <img class="image image-dither" src="{{ images.default }}" alt="Ole Miss logo" />
       <div class="flex flex--col mt--1">
         <p class="title title--xsmall text--bold">Hotty Toddy!</p>
         <p class="label label--outline label--xsmall mt--1">Record: {{ record }}</p>

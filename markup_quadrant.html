@@ -19,7 +19,7 @@
           <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
             <span class="label label--gray label--xsmall text--bold text--uppercase mb--1">Previous</span>
             {% if most_recent_game.opponentLogo %}
-              <img class="image mb--1" src="{{ most_recent_game.opponentLogo }}" alt="{{ most_recent_game.opponentName }} logo" />
+              <img class="image image-dither mb--1" src="{{ most_recent_game.opponentLogo }}" alt="{{ most_recent_game.opponentName }} logo" />
             {% endif %}
             <p class="title title--xsmall text--bold">
               {% if most_recent_game.homeAway == 'vs' %}vs{% else %}@{% endif %} {{ most_recent_game.opponentAbbrev }}
@@ -37,7 +37,7 @@
         <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
           <span class="label label--primary label--xsmall text--bold text--uppercase mb--1">Up Next</span>
           {% if next_event.opposingTeam.images.small %}
-            <img class="image mb--1" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
+            <img class="image image-dither mb--1" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
           {% endif %}
           <p class="title title--xsmall text--bold">
             {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.abbrev }}
@@ -53,7 +53,7 @@
     <!-- OFFSEASON PANEL (When schedule is empty) -->
     <div class="flex flex--col flex--center text--center my--auto p--2 bg--white" id="no-games">
       <span class="label label--gray text--uppercase text--bold mb--1">Season Concluded</span>
-      <img class="image" src="{{ images.default }}" style="width: 48px; height: 48px;" alt="Ole Miss logo" />
+      <img class="image image-dither" src="{{ images.default }}" style="width: 48px; height: 48px;" alt="Ole Miss logo" />
       <div class="flex flex--col mt--1">
         <p class="title title--xsmall text--bold">Hotty Toddy!</p>
         <p class="label label--outline label--xsmall mt--1">Record: {{ record }}</p>

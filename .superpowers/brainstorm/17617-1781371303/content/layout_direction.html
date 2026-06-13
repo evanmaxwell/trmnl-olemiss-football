@@ -1,0 +1,71 @@
+<h2>How should we increase information density on TRMNL X?</h2>
+<p class="subtitle">Select the option that best fits your preference for TRMNL X's larger screen area (1040x780 vs 800x480 on OG).</p>
+
+<div class="options">
+  <div class="option" data-choice="three_column" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Three-Column Dashboard</h3>
+      <p>Keep the left "Up Next" column and the middle "Upcoming Games" column, but add a <strong>third column</strong> on the right showing the last 3-4 games (results/scores) or SEC standings.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="matchup_stats" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Matchup Stats Comparison</h3>
+      <p>Keep the 2-column layout, but expand the "Up Next" hero column to show a <strong>side-by-side comparison</strong> of key team stats (Ole Miss vs Opponent) like rank, record, points/game, and yards/game.</p>
+    </div>
+  </div>
+
+  <div class="option" data-choice="full_season" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Full-Season Schedule Grid</h3>
+      <p>Use the extra height and width to render a <strong>2-column or 3-column schedule grid</strong> on the right, displaying all 12 games of the season at once instead of truncating at 8 games.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <h3>Comparison of Layout Approaches</h3>
+  <div class="split">
+    <div class="mockup">
+      <div class="mockup-header">Option A: Three-Column Dashboard</div>
+      <div class="mockup-body">
+        <div style="display: flex; gap: 0.5rem; height: 120px; font-size: 11px;">
+          <div class="placeholder" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <strong>Up Next Hero</strong>
+            <span>Opponent, Date, Location</span>
+          </div>
+          <div class="placeholder" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <strong>Upcoming Games</strong>
+            <span>List of next 6-8 games</span>
+          </div>
+          <div class="placeholder" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-style: dashed;">
+            <strong>[NEW] Season Stats / Standings</strong>
+            <span>Team stats & SEC Leaders</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mockup">
+      <div class="mockup-header">Option B: Matchup Stats Comparison</div>
+      <div class="mockup-body">
+        <div style="display: flex; gap: 0.5rem; height: 120px; font-size: 11px;">
+          <div class="placeholder" style="flex: 1.2; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-style: dashed;">
+            <strong>Up Next Hero + Matchup Comparison</strong>
+            <div style="font-size: 9px; margin-top: 4px; border-top: 1px solid #ccc; width: 80%; padding-top: 4px;">
+              OM vs OPP: Stats, Rank, Yards
+            </div>
+          </div>
+          <div class="placeholder" style="flex: 0.8; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+            <strong>Upcoming Games</strong>
+            <span>Next games list</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<h2>Brainstorming Density for Smaller Views on TRMNL X</h2>
+<p class="subtitle">Select the approaches you prefer for each of the three smaller views on TRMNL X displays (1040x780 canvas split).</p>
+
+<div class="section">
+  <h3>1. Half Horizontal (1040x390 vs 800x240)</h3>
+  <p>Current layout: 2 columns showing Previous Game (left) and Next Game (right).</p>
+  <div class="options" data-multiselect id="half-horizontal-options">
+    <div class="option" data-choice="h_horiz_standing_col" onclick="toggleSelect(this)">
+      <div class="content">
+        <strong>Option A: Three-Column Layout</strong><br>
+        Add a third column in the middle showing Ole Miss's current season record, AP rank, and standing summary (e.g. #3 | 10-2 | 1st in SEC).
+      </div>
+    </div>
+    <div class="option" data-choice="h_horiz_opponent_stats" onclick="toggleSelect(this)">
+      <div class="content">
+        <strong>Option B: Enriched Matchup Info</strong><br>
+        Keep 2 columns, but show the opponent's record, rank, and standing summary under the next game logo (leveraging our new API data).
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <h3>2. Half Vertical (520x780 vs 400x480)</h3>
+  <p>Current layout: Vertical stack showing Previous Game (top) and Next Game (bottom).</p>
+  <div class="options" data-multiselect id="half-vertical-options">
+    <div class="option" data-choice="h_vert_matchup_table" onclick="toggleSelect(this)">
+      <div class="content">
+        <strong>Option A: Mini Matchup Table</strong><br>
+        Use the extra vertical height to insert a small matchup stats table (AP Rank, Record, Standing) under the "Up Next" panel.
+      </div>
+    </div>
+    <div class="option" data-choice="h_vert_upcoming_list" onclick="toggleSelect(this)">
+      <div class="content">
+        <strong>Option B: Upcoming Games List</strong><br>
+        Insert a list of the next 3 upcoming games at the bottom of the column.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem;">
+  <h3>3. Quadrant (520x390 vs 400x240)</h3>
+  <p>Current layout: 2 columns showing Previous Game (left) and Next Game (right) in extremely compact format (using team abbreviations).</p>
+  <div class="options" data-multiselect id="quadrant-options">
+    <div class="option" data-choice="quad_full_names" onclick="toggleSelect(this)">
+      <div class="content">
+        <strong>Option A: Full Names & Records</strong><br>
+        Expand from abbreviations to full team names, and add team records (e.g. "vs Louisville (8-4)" instead of "vs LOU").
+      </div>
+    </div>
+    <div class="option" data-choice="quad_standing_bar" onclick="toggleSelect(this)">
+      <div class="content">
+        <strong>Option B: Season Summary Footer</strong><br>
+        Add a small horizontal bar at the bottom displaying Ole Miss's current rank, record, and standings summary.
+      </div>
+    </div>
+  </div>
+</div>

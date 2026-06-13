@@ -32,7 +32,7 @@
         <img class="image image-dither" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
       {% endif %}
       <div class="flex flex--col grow">
-        <span class="label label--inverted label--small text--uppercase text--bold w--fit">Up Next</span>
+        <span class="label label--small text--uppercase text--bold w--fit">Up Next</span>
         <p class="title title--small text--bold mt--1">
           {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.name }}
         </p>

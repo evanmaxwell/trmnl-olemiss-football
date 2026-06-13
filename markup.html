@@ -36,7 +36,7 @@
       <div id="next-game" class="column">
         {% assign next_event = schedule[0] %}
         <div class="flex flex--col flex--center text--center">
-          <span class="label label--inverted text--uppercase text--bold mb--3">Up Next</span>
+          <span class="label text--uppercase text--bold mb--3">Up Next</span>
           {% if next_event.opposingTeam.images.small %}
             <img class="image image-dither" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
           {% endif %}
@@ -67,13 +67,13 @@
           <span class="label label--small label--underline mb--2">Upcoming Games</span>
           <div class="list" data-list-limit="true" data-list-hidden-count="true" data-list-max-columns="1">
             {% for event in schedule offset:1 limit:8 %}
-              <div class="item py--1 px--2 mb--1 border--bottom border--bottom-10{% if forloop.index0 >= 4 %} hidden lg:flex{% endif %}">
+              <div class="item py--1 px--2 mb--1 border--bottom border--bottom-10">
                 <div class="meta"></div>
                 <div class="upcoming-row">
                   <div class="content flex flex--col flex--left grow">
                     <p class="title title--small">
                       {% if event.isHomeGame %}
-                        <span class="label label--small label--inverted text--bold mr--1">Home</span>
+                        <span class="label label--small label--outline text--bold mr--1">Home</span>
                       {% else %}
                         <span class="label label--small label--outline text--bold mr--1">Away</span>
                       {% endif %}

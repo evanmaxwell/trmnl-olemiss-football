@@ -59,10 +59,15 @@ async function getTop25Rankings() {
 }
 
 async function getTeamDetails() {
-  const data = await fetchJson(
-    `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}`,
-  );
-  return data;
+  try {
+    const data = await fetchJson(
+      `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}`,
+    );
+    return data;
+  } catch (error) {
+    console.error("Error fetching Ole Miss details:", error);
+    return null;
+  }
 }
 
 
@@ -91,9 +96,11 @@ function formatDateET(dateString, isTBD = false) {
 
 async function main() {
   try {
-    const scheduleData = await getSchedule();
-    const rankingsData = await getTop25Rankings();
-    const teamDetails = await getTeamDetails();
+    const [scheduleData, rankingsData, teamDetails] = await Promise.all([
+      getSchedule(),
+      getTop25Rankings(),
+      getTeamDetails(),
+    ]);
     const standingSummary = teamDetails?.team?.standingSummary || "";
 
 
@@ -169,6 +176,7 @@ async function main() {
         date: formatDateET(event.date, isTBD),
         rawDate: event.date,
         isCompleted: isCompleted,
+        opponentId: opponent.id,
         opponentName: opponent.team.displayName,
         opponentAbbrev: opponent.team.abbreviation,
         opponentLogo: opponent.team.logos?.[0]?.href || "",
@@ -312,6 +320,23 @@ async function main() {
 
     if (nextGame) {
       nextGame.oleMissStanding = standingSummary;
+      let opponentStanding = "";
+      let opponentRecord = "0-0";
+
+      if (nextGame.opponentId) {
+        try {
+          const opponentData = await fetchJson(
+            `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${nextGame.opponentId}`
+          );
+          opponentStanding = opponentData?.team?.standingSummary || "";
+          opponentRecord = opponentData?.team?.record?.[0]?.displayValue || "0-0";
+        } catch (error) {
+          console.error(`Error fetching opponent details for ID ${nextGame.opponentId}:`, error);
+        }
+      }
+
+      nextGame.opponentStanding = opponentStanding;
+      nextGame.opponentRecord = opponentRecord;
     }
 
     const payload = {

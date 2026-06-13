@@ -40,6 +40,34 @@
         <p class="label label--small label--gray mt--1">{{ next_event.location }}</p>
       </div>
     </div>
+
+    {% if schedule.size > 1 %}
+      <div class="hidden lg:flex flex--col mt--2 border--top border--top-10 pt--2 w--full">
+        <span class="label label--small label--underline mb--1">Upcoming Schedule</span>
+        <div class="list" data-overflow="true" data-overflow-counter="true" data-overflow-max-cols="1">
+          {% for event in schedule offset:1 limit:3 %}
+            <div class="item py--1 px--2 mb--1 border--bottom border--bottom-10">
+              <div class="flex flex--row flex--space-between flex--center-y w--full">
+                <div class="flex flex--col grow">
+                  <p class="title title--xsmall text--bold">
+                    {% if event.isHomeGame %}
+                      <span class="text--gray-40 text--bold mr--1">vs</span>
+                    {% else %}
+                      <span class="text--gray-40 text--bold mr--1">@</span>
+                    {% endif %}
+                    <span>{{ event.opposingTeam.name }}</span>
+                  </p>
+                  <p class="description mt--1">{{ event.date }}</p>
+                </div>
+                {% if event.opposingTeam.images.small %}
+                  <img class="image image-dither w--8 h--8" src="{{ event.opposingTeam.images.small }}" alt="{{ event.opposingTeam.name }} logo" />
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
   {% else %}
     <!-- OFFSEASON PANEL (When schedule is empty) -->
     <div class="flex flex--col flex--center text--center my--auto p--4" id="no-games">

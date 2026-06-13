@@ -2,7 +2,7 @@
   #next-game, #previous-game {
     margin: auto;
   }
-  #next-game img, #previous-game img, #no-games img {
+  #next-game .hero-logo, #previous-game img, #no-games img {
     width: 96px;
     height: 96px;
     object-fit: contain;
@@ -35,17 +35,26 @@
       <!-- HERO COLUMN (Right - Next Game) -->
       <div id="next-game" class="column">
         {% assign next_event = schedule[0] %}
-        <div class="flex flex--row flex--center-y gap--small h--full">
-          {% if next_event.opposingTeam.images.small %}
-            <img class="image image-dither" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
-          {% endif %}
-          <div class="flex flex--col">
-            <span class="label label--xsmall text--bold text--uppercase w--fit">Up Next</span>
-            <p class="title title--small text--bold mt--1">
-              {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.name }}
-            </p>
-            <p class="description mt--1">{{ next_event.date }}</p>
-            <p class="label label--xsmall label--gray mt--1">{{ next_event.location }}</p>
+        <div class="flex flex--col flex--justify-center h--full">
+          <div class="flex flex--row flex--center-y gap--small grow">
+            {% if next_event.opposingTeam.images.small %}
+              <img class="image image-dither hero-logo" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
+            {% endif %}
+            <div class="flex flex--col">
+              <span class="label label--xsmall text--bold text--uppercase w--fit">Up Next</span>
+              <p class="title title--small text--bold mt--1">
+                {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.name }}
+              </p>
+              <p class="description mt--1">{{ next_event.date }}</p>
+              <p class="label label--xsmall label--gray mt--1">{{ next_event.location }}</p>
+            </div>
+          </div>
+          <!-- Opponent Stats (Large screen only) -->
+          <div class="hidden lg:flex flex--row flex--center-y mt--2 border--top border--top-10 pt--1">
+            <span class="label label--xsmall label--gray text--bold mr--1">
+              {% if next_event.opposingTeam.curatedRank.current and next_event.opposingTeam.curatedRank.current != 99 %}#{{ next_event.opposingTeam.curatedRank.current }} {% endif %}
+              {{ next_game.opponentRecord | default: '0-0' }} | {{ next_game.opponentStanding | default: 'Conf' }}
+            </span>
           </div>
         </div>
       </div>

@@ -26,6 +26,36 @@
     max-height: 48px;
     object-fit: contain;
   }
+  /* Styles for TRMNL X Matchup stats table */
+  .matchup-table {
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 11px;
+  }
+  .matchup-row {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 4px 0;
+  }
+  .matchup-row:last-child {
+    border-bottom: none;
+  }
+  .matchup-col {
+    flex: 1;
+    text-align: center;
+  }
+  .matchup-col--label {
+    flex: 1.2;
+    color: #666;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+  .matchup-header {
+    background: #eee;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+  }
 </style>
 
 <div class="layout">
@@ -35,7 +65,9 @@
       <!-- HERO COLUMN (Left - Next Game) -->
       <div id="next-game" class="column">
         {% assign next_event = schedule[0] %}
-        <div class="flex flex--col flex--center text--center">
+        
+        <!-- TRMNL OG Layout (Default) -->
+        <div class="flex flex--col flex--center text--center lg:hidden">
           <span class="label text--uppercase text--bold mb--3">Up Next</span>
           {% if next_event.opposingTeam.images.small %}
             <img class="image image-dither" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
@@ -46,19 +78,68 @@
             </p>
             <p class="description mt--1">{{ next_event.date }}</p>
             <p class="label label--small label--gray mt--2">{{ next_event.location }}</p>
-            
-            {% if most_recent_game %}
-              <div class="border--top border--top-10 mt--3 pt--3 text--center grow w--full">
-                <span class="label label--small label--gray mb--1">Previous Game</span>
-                <div class="flex flex--row flex--center flex--justify-center mt--1">
-                  <span class="label label--bold {% if most_recent_game.outcome == 'W' %}label--success{% else %}label--error{% endif %} mr--3">{{ most_recent_game.outcome }}</span>
-                  <span class="title title--small text--bold mr--3">{{ most_recent_game.score }}</span>
-                  <span class="description text--semibold">{% if most_recent_game.homeAway == 'vs' %}vs {% else %}@ {% endif %}{{ most_recent_game.opponentName }}</span>
-                </div>
-              </div>
-            {% endif %}
           </div>
         </div>
+
+        <!-- TRMNL X Layout (Large screen only) -->
+        <div class="hidden lg:flex flex--col flex--center text--center">
+          <span class="label text--uppercase text--bold mb--2">Up Next Matchup</span>
+          
+          <!-- Side-by-Side Logos -->
+          <div class="flex flex--row flex--center flex--justify-center gap--large mb--2 w--full">
+            <!-- Ole Miss Logo -->
+            <img class="image image-dither" style="width: 60px; height: 60px;" src="https://a.espncdn.com/i/teamlogos/ncaa/500/145.png" alt="Ole Miss logo" />
+            <span class="title title--small text--bold text--gray">VS</span>
+            <!-- Opponent Logo -->
+            {% if next_event.opposingTeam.images.small %}
+              <img class="image image-dither" style="width: 60px; height: 60px;" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
+            {% endif %}
+          </div>
+
+          <div class="flex flex--col w--full">
+            <p class="title title--medium text--bold">
+              {% if rank != 'NR' %}#{{ rank }} {% endif %}Ole Miss {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.name }}
+            </p>
+            <p class="description mt--1">{{ next_event.date }}</p>
+            <p class="label label--small label--gray mt--1">{{ next_event.location }}</p>
+
+            <!-- Matchup Stats Table -->
+            <div class="matchup-table mt--3">
+              <div class="matchup-row matchup-header py--1">
+                <div class="matchup-col">REBELS</div>
+                <div class="matchup-col matchup-col--label">STATS</div>
+                <div class="matchup-col">{{ next_event.opposingTeam.abbrev | default: 'OPP' }}</div>
+              </div>
+              <div class="matchup-row">
+                <div class="matchup-col text--bold">{% if rank != 'NR' %}#{{ rank }}{% else %}NR{% endif %}</div>
+                <div class="matchup-col matchup-col--label">AP Rank</div>
+                <div class="matchup-col">{% if next_event.opposingTeam.curatedRank.current and next_event.opposingTeam.curatedRank.current != 99 %}#{{ next_event.opposingTeam.curatedRank.current }}{% else %}NR{% endif %}</div>
+              </div>
+              <div class="matchup-row">
+                <div class="matchup-col text--bold">{{ record | default: '0-0' }}</div>
+                <div class="matchup-col matchup-col--label">Record</div>
+                <div class="matchup-col">{{ next_game.opponentRecord | default: '0-0' }}</div>
+              </div>
+              <div class="matchup-row">
+                <div class="matchup-col text--bold">{{ next_game.oleMissStanding | default: 'SEC' }}</div>
+                <div class="matchup-col matchup-col--label">Standing</div>
+                <div class="matchup-col">{{ next_game.opponentStanding | default: 'Conf' }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous Game Info Row (Shared, but styled) -->
+        {% if most_recent_game %}
+          <div class="border--top border--top-10 mt--3 pt--3 text--center grow w--full">
+            <span class="label label--small label--gray mb--1">Previous Game</span>
+            <div class="flex flex--row flex--center flex--justify-center mt--1">
+              <span class="label label--bold {% if most_recent_game.outcome == 'W' %}label--success{% else %}label--error{% endif %} mr--3">{{ most_recent_game.outcome }}</span>
+              <span class="title title--small text--bold mr--3">{{ most_recent_game.score }}</span>
+              <span class="description text--semibold">{% if most_recent_game.homeAway == 'vs' %}vs {% else %}@ {% endif %}{{ most_recent_game.opponentName }}</span>
+            </div>
+          </div>
+        {% endif %}
       </div>
 
       <!-- UPCOMING LIST COLUMN (Right - Schedule) -->

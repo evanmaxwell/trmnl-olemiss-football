@@ -11,43 +11,52 @@
 
 <div class="layout">
   {% if schedule.size > 0 %}
-    <div class="columns">
-      
-      <!-- PREVIOUS GAME COLUMN (Left) -->
-      {% if most_recent_game %}
-        <div id="previous-game-quad" class="column">
+    <div class="layout layout--col gap--small">
+      <div class="columns grow">
+        
+        <!-- PREVIOUS GAME COLUMN (Left) -->
+        {% if most_recent_game %}
+          <div id="previous-game-quad" class="column">
+            <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
+              <span class="label label--gray label--xsmall text--bold text--uppercase mb--1">Previous</span>
+              {% if most_recent_game.opponentLogo %}
+                <img class="image image-dither mb--1" src="{{ most_recent_game.opponentLogo }}" alt="{{ most_recent_game.opponentName }} logo" />
+              {% endif %}
+              <p class="title title--xsmall text--bold">
+                {% if most_recent_game.homeAway == 'vs' %}vs{% else %}@{% endif %} {{ most_recent_game.opponentAbbrev }}
+              </p>
+              <p class="description description--xsmall text--bold mt--1">
+                {{ most_recent_game.outcome }} ({{ most_recent_game.score }})
+              </p>
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- HERO COLUMN (Right - Next Game) -->
+        <div id="next-game-quad" class="column">
+          {% assign next_event = schedule[0] %}
           <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
-            <span class="label label--gray label--xsmall text--bold text--uppercase mb--1">Previous</span>
-            {% if most_recent_game.opponentLogo %}
-              <img class="image image-dither mb--1" src="{{ most_recent_game.opponentLogo }}" alt="{{ most_recent_game.opponentName }} logo" />
+            <span class="label label--xsmall text--bold text--uppercase mb--1">Up Next</span>
+            {% if next_event.opposingTeam.images.small %}
+              <img class="image image-dither mb--1" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
             {% endif %}
             <p class="title title--xsmall text--bold">
-              {% if most_recent_game.homeAway == 'vs' %}vs{% else %}@{% endif %} {{ most_recent_game.opponentAbbrev }}
+              {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.abbrev }}
             </p>
-            <p class="description description--xsmall text--bold mt--1">
-              {{ most_recent_game.outcome }} ({{ most_recent_game.score }})
+            <p class="description description--xsmall mt--1">
+              {{ next_event.date | replace: ' EDT', '' | replace: ' EST', '' | replace: ' PDT', '' | replace: ' PST', '' }}
             </p>
           </div>
         </div>
-      {% endif %}
 
-      <!-- HERO COLUMN (Right - Next Game) -->
-      <div id="next-game-quad" class="column">
-        {% assign next_event = schedule[0] %}
-        <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
-          <span class="label label--xsmall text--bold text--uppercase mb--1">Up Next</span>
-          {% if next_event.opposingTeam.images.small %}
-            <img class="image image-dither mb--1" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
-          {% endif %}
-          <p class="title title--xsmall text--bold">
-            {% if next_event.isHomeGame %}vs{% else %}@{% endif %} {{ next_event.opposingTeam.abbrev }}
-          </p>
-          <p class="description description--xsmall mt--1">
-            {{ next_event.date | replace: ' EDT', '' | replace: ' EST', '' | replace: ' PDT', '' | replace: ' PST', '' }}
-          </p>
-        </div>
       </div>
 
+      <!-- Season Summary Footer (TRMNL X only) -->
+      <div class="hidden lg:flex flex--row flex--center flex--justify-center gap--medium py--1 border--top border--top-10 w--full">
+        <span class="label label--small label--primary">{% if rank != 'NR' %}#{{ rank }} {% endif %}Ole Miss</span>
+        <span class="label label--small label--outline text--bold">Record: {{ record }}</span>
+        <span class="label label--small label--gray">{{ next_game.oleMissStanding }}</span>
+      </div>
     </div>
   {% else %}
     <!-- OFFSEASON PANEL (When schedule is empty) -->

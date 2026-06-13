@@ -58,6 +58,14 @@ async function getTop25Rankings() {
   return data;
 }
 
+async function getTeamDetails() {
+  const data = await fetchJson(
+    `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${OLE_MISS_TEAM_ID}`,
+  );
+  return data;
+}
+
+
 function formatDateET(dateString, isTBD = false) {
   const d = new Date(dateString);
   if (isTBD) {
@@ -85,6 +93,9 @@ async function main() {
   try {
     const scheduleData = await getSchedule();
     const rankingsData = await getTop25Rankings();
+    const teamDetails = await getTeamDetails();
+    const standingSummary = teamDetails?.team?.standingSummary || "";
+
 
     // Extract Ole Miss Rank
     let currentRank = "NR";
@@ -299,10 +310,15 @@ async function main() {
       seasonRecord = scheduleData.team?.record?.[0]?.displayValue || "0-0";
     }
 
+    if (nextGame) {
+      nextGame.oleMissStanding = standingSummary;
+    }
+
     const payload = {
       rank: currentRank,
       season: seasonYear,
       record: seasonRecord,
+      standingSummary: standingSummary,
       most_recent_game: mostRecentGame,
       next_game: nextGame,
       all_games: processedGames,

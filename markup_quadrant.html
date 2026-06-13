@@ -35,7 +35,7 @@
       <div id="next-game-quad" class="column">
         {% assign next_event = schedule[0] %}
         <div class="outline rounded p--2 flex flex--col flex--center-y flex--justify-center h--full text--center bg--white">
-          <span class="label label--primary label--xsmall text--bold text--uppercase mb--1">Up Next</span>
+          <span class="label label--inverted label--xsmall text--bold text--uppercase mb--1">Up Next</span>
           {% if next_event.opposingTeam.images.small %}
             <img class="image image-dither mb--1" src="{{ next_event.opposingTeam.images.small }}" alt="{{ next_event.opposingTeam.name }} logo" />
           {% endif %}

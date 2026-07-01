@@ -34,7 +34,7 @@
     "network": "ABC",
     "statusStr": "9/6 - 7:30 PM EDT",
     "oleMissStanding": "1st in SEC",
-    "opponentStanding": "7th in ACC",
+    "opponentStanding": "1st in ACC",
     "opponentRecord": "0-0"
   },
   "all_games": [
@@ -54,7 +54,7 @@
       "network": "ABC",
       "statusStr": "9/6 - 7:30 PM EDT",
       "oleMissStanding": "1st in SEC",
-      "opponentStanding": "7th in ACC",
+      "opponentStanding": "1st in ACC",
       "opponentRecord": "0-0"
     },
     {

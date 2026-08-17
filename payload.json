@@ -1,5 +1,5 @@
 {
-  "rank": 10,
+  "rank": 9,
   "season": 2026,
   "record": "0-0",
   "standingSummary": "1st in SEC",
@@ -242,7 +242,7 @@
         "name": "Louisville Cardinals",
         "abbrev": "LOU",
         "curatedRank": {
-          "current": 99
+          "current": 24
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png"
@@ -274,7 +274,7 @@
         "name": "LSU Tigers",
         "abbrev": "LSU",
         "curatedRank": {
-          "current": 99
+          "current": 11
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png"
@@ -322,7 +322,7 @@
         "name": "Missouri Tigers",
         "abbrev": "MIZ",
         "curatedRank": {
-          "current": 99
+          "current": 25
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
@@ -338,7 +338,7 @@
         "name": "Texas Longhorns",
         "abbrev": "TEX",
         "curatedRank": {
-          "current": 99
+          "current": 5
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
@@ -370,7 +370,7 @@
         "name": "Georgia Bulldogs",
         "abbrev": "UGA",
         "curatedRank": {
-          "current": 99
+          "current": 3
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
@@ -386,7 +386,7 @@
         "name": "Oklahoma Sooners",
         "abbrev": "OU",
         "curatedRank": {
-          "current": 99
+          "current": 10
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"

@@ -4,18 +4,19 @@
   "record": "0-0",
   "standingSummary": "1st in SEC",
   "most_recent_game": {
-    "name": "Miami Hurricanes at Ole Miss Rebels",
-    "shortName": "MIA VS MISS",
-    "date": "Thu, Jan 8, 7:30 PM EST",
-    "rawDate": "2026-01-09T00:30Z",
+    "name": "Louisville Cardinals at Ole Miss Rebels",
+    "shortName": "LOU VS MISS",
+    "date": "Sun, Sep 6, 7:30 PM EDT",
+    "rawDate": "2026-09-06T23:30Z",
     "isCompleted": true,
-    "opponentName": "Miami Hurricanes",
-    "opponentAbbrev": "MIA",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+    "opponentId": "97",
+    "opponentName": "Louisville Cardinals",
+    "opponentAbbrev": "LOU",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
     "homeAway": "vs",
-    "outcome": "L",
-    "score": "31-27",
-    "network": "ESPN",
+    "outcome": "W",
+    "score": "41-38",
+    "network": "ABC",
     "statusStr": "Final"
   },
   "next_game": {
@@ -43,16 +44,16 @@
       "shortName": "LOU VS MISS",
       "date": "Sun, Sep 6, 7:30 PM EDT",
       "rawDate": "2026-09-06T23:30Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "97",
       "opponentName": "Louisville Cardinals",
       "opponentAbbrev": "LOU",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
       "homeAway": "vs",
-      "outcome": "",
-      "score": "",
+      "outcome": "W",
+      "score": "41-38",
       "network": "ABC",
-      "statusStr": "4:42 - 4th"
+      "statusStr": "Final"
     },
     {
       "name": "Charlotte 49ers at Ole Miss Rebels",
@@ -235,22 +236,6 @@
     }
   ],
   "schedule": [
-    {
-      "isCompleted": false,
-      "isHomeGame": true,
-      "opposingTeam": {
-        "name": "Louisville Cardinals",
-        "abbrev": "LOU",
-        "curatedRank": {
-          "current": 24
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png"
-        }
-      },
-      "date": "Sun, Sep 6, 7:30 PM EDT",
-      "location": "Nashville, TN | ABC"
-    },
     {
       "isCompleted": false,
       "isHomeGame": true,

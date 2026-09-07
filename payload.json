@@ -19,22 +19,22 @@
     "statusStr": "Final"
   },
   "next_game": {
-    "name": "Louisville Cardinals at Ole Miss Rebels",
-    "shortName": "LOU VS MISS",
-    "date": "Sun, Sep 6, 7:30 PM EDT",
-    "rawDate": "2026-09-06T23:30Z",
+    "name": "Charlotte 49ers at Ole Miss Rebels",
+    "shortName": "CLT @ MISS",
+    "date": "Sat, Sep 12, 7:45 PM EDT",
+    "rawDate": "2026-09-12T23:45Z",
     "isCompleted": false,
-    "opponentId": "97",
-    "opponentName": "Louisville Cardinals",
-    "opponentAbbrev": "LOU",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
+    "opponentId": "2429",
+    "opponentName": "Charlotte 49ers",
+    "opponentAbbrev": "CLT",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
     "homeAway": "vs",
     "outcome": "",
     "score": "",
-    "network": "ABC",
-    "statusStr": "9/6 - 7:30 PM EDT",
+    "network": "ESPN2",
+    "statusStr": "9/12 - 7:45 PM EDT",
     "oleMissStanding": "1st in SEC",
-    "opponentStanding": "3rd in ACC",
+    "opponentStanding": "1st in American",
     "opponentRecord": "0-0"
   },
   "all_games": [
@@ -52,10 +52,7 @@
       "outcome": "",
       "score": "",
       "network": "ABC",
-      "statusStr": "9/6 - 7:30 PM EDT",
-      "oleMissStanding": "1st in SEC",
-      "opponentStanding": "3rd in ACC",
-      "opponentRecord": "0-0"
+      "statusStr": "4:42 - 4th"
     },
     {
       "name": "Charlotte 49ers at Ole Miss Rebels",
@@ -71,7 +68,10 @@
       "outcome": "",
       "score": "",
       "network": "ESPN2",
-      "statusStr": "9/12 - 7:45 PM EDT"
+      "statusStr": "9/12 - 7:45 PM EDT",
+      "oleMissStanding": "1st in SEC",
+      "opponentStanding": "1st in American",
+      "opponentRecord": "0-0"
     },
     {
       "name": "LSU Tigers at Ole Miss Rebels",

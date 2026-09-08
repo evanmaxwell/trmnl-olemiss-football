@@ -259,7 +259,7 @@
         "name": "LSU Tigers",
         "abbrev": "LSU",
         "curatedRank": {
-          "current": 11
+          "current": 8
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png"
@@ -307,7 +307,7 @@
         "name": "Missouri Tigers",
         "abbrev": "MIZ",
         "curatedRank": {
-          "current": 25
+          "current": 23
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
@@ -323,7 +323,7 @@
         "name": "Texas Longhorns",
         "abbrev": "TEX",
         "curatedRank": {
-          "current": 5
+          "current": 4
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
@@ -355,7 +355,7 @@
         "name": "Georgia Bulldogs",
         "abbrev": "UGA",
         "curatedRank": {
-          "current": 3
+          "current": 2
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
@@ -371,7 +371,7 @@
         "name": "Oklahoma Sooners",
         "abbrev": "OU",
         "curatedRank": {
-          "current": 10
+          "current": 11
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"

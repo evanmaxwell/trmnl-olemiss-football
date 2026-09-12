@@ -35,7 +35,7 @@
     "network": "ESPN2",
     "statusStr": "9/12 - 7:45 PM EDT",
     "oleMissStanding": "1st in SEC",
-    "opponentStanding": "1st in American",
+    "opponentStanding": "2nd in American",
     "opponentRecord": "0-0"
   },
   "all_games": [
@@ -71,7 +71,7 @@
       "network": "ESPN2",
       "statusStr": "9/12 - 7:45 PM EDT",
       "oleMissStanding": "1st in SEC",
-      "opponentStanding": "1st in American",
+      "opponentStanding": "2nd in American",
       "opponentRecord": "0-0"
     },
     {

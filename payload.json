@@ -2,40 +2,40 @@
   "rank": 9,
   "season": 2026,
   "record": "0-0",
-  "standingSummary": "1st in SEC",
+  "standingSummary": "2nd in SEC",
   "most_recent_game": {
-    "name": "Louisville Cardinals at Ole Miss Rebels",
-    "shortName": "LOU VS MISS",
-    "date": "Sun, Sep 6, 7:30 PM EDT",
-    "rawDate": "2026-09-06T23:30Z",
-    "isCompleted": true,
-    "opponentId": "97",
-    "opponentName": "Louisville Cardinals",
-    "opponentAbbrev": "LOU",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png",
-    "homeAway": "vs",
-    "outcome": "W",
-    "score": "41-38",
-    "network": "ABC",
-    "statusStr": "Final"
-  },
-  "next_game": {
     "name": "Charlotte 49ers at Ole Miss Rebels",
     "shortName": "CLT @ MISS",
     "date": "Sat, Sep 12, 7:45 PM EDT",
     "rawDate": "2026-09-12T23:45Z",
-    "isCompleted": false,
+    "isCompleted": true,
     "opponentId": "2429",
     "opponentName": "Charlotte 49ers",
     "opponentAbbrev": "CLT",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
     "homeAway": "vs",
+    "outcome": "W",
+    "score": "41-9",
+    "network": "ESPN2",
+    "statusStr": "Final"
+  },
+  "next_game": {
+    "name": "LSU Tigers at Ole Miss Rebels",
+    "shortName": "LSU @ MISS",
+    "date": "Sat, Sep 19, 7:30 PM EDT",
+    "rawDate": "2026-09-19T23:30Z",
+    "isCompleted": false,
+    "opponentId": "99",
+    "opponentName": "LSU Tigers",
+    "opponentAbbrev": "LSU",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
+    "homeAway": "vs",
     "outcome": "",
     "score": "",
-    "network": "ESPN2",
-    "statusStr": "9/12 - 7:45 PM EDT",
-    "oleMissStanding": "1st in SEC",
-    "opponentStanding": "2nd in American",
+    "network": "ABC",
+    "statusStr": "9/19 - 7:30 PM EDT",
+    "oleMissStanding": "2nd in SEC",
+    "opponentStanding": "2nd in SEC",
     "opponentRecord": "0-0"
   },
   "all_games": [
@@ -60,19 +60,16 @@
       "shortName": "CLT @ MISS",
       "date": "Sat, Sep 12, 7:45 PM EDT",
       "rawDate": "2026-09-12T23:45Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "2429",
       "opponentName": "Charlotte 49ers",
       "opponentAbbrev": "CLT",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
       "homeAway": "vs",
-      "outcome": "",
-      "score": "",
+      "outcome": "W",
+      "score": "41-9",
       "network": "ESPN2",
-      "statusStr": "9/12 - 7:45 PM EDT",
-      "oleMissStanding": "1st in SEC",
-      "opponentStanding": "2nd in American",
-      "opponentRecord": "0-0"
+      "statusStr": "Final"
     },
     {
       "name": "LSU Tigers at Ole Miss Rebels",
@@ -88,7 +85,10 @@
       "outcome": "",
       "score": "",
       "network": "ABC",
-      "statusStr": "9/19 - 7:30 PM EDT"
+      "statusStr": "9/19 - 7:30 PM EDT",
+      "oleMissStanding": "2nd in SEC",
+      "opponentStanding": "2nd in SEC",
+      "opponentRecord": "0-0"
     },
     {
       "name": "Ole Miss Rebels at Florida Gators",
@@ -236,22 +236,6 @@
     }
   ],
   "schedule": [
-    {
-      "isCompleted": false,
-      "isHomeGame": true,
-      "opposingTeam": {
-        "name": "Charlotte 49ers",
-        "abbrev": "CLT",
-        "curatedRank": {
-          "current": 99
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png"
-        }
-      },
-      "date": "Sat, Sep 12, 7:45 PM EDT",
-      "location": "Oxford, MS | ESPN2"
-    },
     {
       "isCompleted": false,
       "isHomeGame": true,

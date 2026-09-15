@@ -93,8 +93,8 @@
     {
       "name": "Ole Miss Rebels at Florida Gators",
       "shortName": "MISS @ FLA",
-      "date": "Sat, Sep 26 at TBD",
-      "rawDate": "2026-09-26T04:00Z",
+      "date": "Sat, Sep 26, 3:30 PM EDT",
+      "rawDate": "2026-09-26T19:30Z",
       "isCompleted": false,
       "opponentId": "57",
       "opponentName": "Florida Gators",
@@ -104,7 +104,7 @@
       "outcome": "",
       "score": "",
       "network": "TBD",
-      "statusStr": "TBD"
+      "statusStr": "9/26 - 3:30 PM EDT"
     },
     {
       "name": "Ole Miss Rebels at Vanderbilt Commodores",
@@ -265,7 +265,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
         }
       },
-      "date": "Sat, Sep 26 at TBD",
+      "date": "Sat, Sep 26, 3:30 PM EDT",
       "location": "Gainesville, FL | TBD"
     },
     {

@@ -2,7 +2,7 @@
   "rank": 8,
   "season": 2026,
   "record": "0-0",
-  "standingSummary": "2nd in SEC",
+  "standingSummary": "3rd in SEC",
   "most_recent_game": {
     "name": "Charlotte 49ers at Ole Miss Rebels",
     "shortName": "CLT @ MISS",
@@ -34,8 +34,8 @@
     "score": "",
     "network": "ABC",
     "statusStr": "9/19 - 7:30 PM EDT",
-    "oleMissStanding": "2nd in SEC",
-    "opponentStanding": "2nd in SEC",
+    "oleMissStanding": "3rd in SEC",
+    "opponentStanding": "3rd in SEC",
     "opponentRecord": "0-0"
   },
   "all_games": [
@@ -86,8 +86,8 @@
       "score": "",
       "network": "ABC",
       "statusStr": "9/19 - 7:30 PM EDT",
-      "oleMissStanding": "2nd in SEC",
-      "opponentStanding": "2nd in SEC",
+      "oleMissStanding": "3rd in SEC",
+      "opponentStanding": "3rd in SEC",
       "opponentRecord": "0-0"
     },
     {

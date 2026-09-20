@@ -32,7 +32,7 @@
     "homeAway": "@",
     "outcome": "",
     "score": "",
-    "network": "TBD",
+    "network": "ABC",
     "statusStr": "9/26 - 3:30 PM EDT",
     "oleMissStanding": "1st in SEC",
     "opponentStanding": "1st in SEC",
@@ -100,7 +100,7 @@
       "homeAway": "@",
       "outcome": "",
       "score": "",
-      "network": "TBD",
+      "network": "ABC",
       "statusStr": "9/26 - 3:30 PM EDT",
       "oleMissStanding": "1st in SEC",
       "opponentStanding": "1st in SEC",
@@ -250,7 +250,7 @@
         }
       },
       "date": "Sat, Sep 26, 3:30 PM EDT",
-      "location": "Gainesville, FL | TBD"
+      "location": "Gainesville, FL | ABC"
     },
     {
       "isCompleted": false,

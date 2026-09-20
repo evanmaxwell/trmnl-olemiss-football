@@ -1,5 +1,5 @@
 {
-  "rank": 8,
+  "rank": 4,
   "season": 2026,
   "record": "0-0",
   "standingSummary": "1st in SEC",
@@ -243,7 +243,7 @@
         "name": "Florida Gators",
         "abbrev": "FLA",
         "curatedRank": {
-          "current": 99
+          "current": 21
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
@@ -275,7 +275,7 @@
         "name": "Missouri Tigers",
         "abbrev": "MIZ",
         "curatedRank": {
-          "current": 20
+          "current": 19
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
@@ -339,7 +339,7 @@
         "name": "Oklahoma Sooners",
         "abbrev": "OU",
         "curatedRank": {
-          "current": 24
+          "current": 99
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
@@ -371,7 +371,7 @@
         "name": "Mississippi State Bulldogs",
         "abbrev": "MSST",
         "curatedRank": {
-          "current": 99
+          "current": 24
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"

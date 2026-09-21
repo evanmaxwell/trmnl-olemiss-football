@@ -1,7 +1,7 @@
 {
   "rank": 4,
   "season": 2026,
-  "record": "0-0",
+  "record": "3-0",
   "standingSummary": "1st in SEC",
   "most_recent_game": {
     "name": "LSU Tigers at Ole Miss Rebels",
@@ -36,7 +36,7 @@
     "statusStr": "9/26 - 3:30 PM EDT",
     "oleMissStanding": "1st in SEC",
     "opponentStanding": "1st in SEC",
-    "opponentRecord": "0-0"
+    "opponentRecord": "3-0"
   },
   "all_games": [
     {
@@ -104,7 +104,7 @@
       "statusStr": "9/26 - 3:30 PM EDT",
       "oleMissStanding": "1st in SEC",
       "opponentStanding": "1st in SEC",
-      "opponentRecord": "0-0"
+      "opponentRecord": "3-0"
     },
     {
       "name": "Ole Miss Rebels at Vanderbilt Commodores",
@@ -247,10 +247,15 @@
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
-        }
+        },
+        "record": "3-0",
+        "standing": "1st in SEC"
       },
       "date": "Sat, Sep 26, 3:30 PM EDT",
-      "location": "Gainesville, FL | ABC"
+      "location": "Gainesville, FL | ABC",
+      "opponentRecord": "3-0",
+      "opponentStanding": "1st in SEC",
+      "oleMissStanding": "1st in SEC"
     },
     {
       "isCompleted": false,

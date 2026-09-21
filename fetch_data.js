@@ -71,6 +71,40 @@ async function getTeamDetails() {
 }
 
 
+function extractRecord(teamObj) {
+  if (!teamObj) return "0-0";
+  // 1. Check team.record.items[0].summary (e.g. "3-0")
+  if (teamObj.record?.items?.[0]?.summary) {
+    return teamObj.record.items[0].summary;
+  }
+  // 2. Check team.recordSummary (e.g. "3-0")
+  if (teamObj.recordSummary) {
+    return teamObj.recordSummary;
+  }
+  // 3. Fallbacks for various ESPN record formats
+  if (teamObj.record?.items?.[0]?.displayValue) {
+    return teamObj.record.items[0].displayValue;
+  }
+  if (Array.isArray(teamObj.record) && teamObj.record[0]?.displayValue) {
+    return teamObj.record[0].displayValue;
+  }
+  if (Array.isArray(teamObj.record) && teamObj.record[0]?.summary) {
+    return teamObj.record[0].summary;
+  }
+  return "0-0";
+}
+
+function extractStanding(teamObj) {
+  if (!teamObj) return "";
+  if (teamObj.standingSummary) {
+    return teamObj.standingSummary;
+  }
+  if (teamObj.groups?.parent?.name?.includes("Independent")) {
+    return "Independent";
+  }
+  return "";
+}
+
 function formatDateET(dateString, isTBD = false) {
   const d = new Date(dateString);
   if (isTBD) {
@@ -101,7 +135,7 @@ async function main() {
       getTop25Rankings(),
       getTeamDetails(),
     ]);
-    const standingSummary = teamDetails?.team?.standingSummary || "";
+    const standingSummary = extractStanding(teamDetails?.team);
 
 
     // Extract Ole Miss Rank
@@ -191,8 +225,7 @@ async function main() {
 
       if (isCompleted) {
         mostRecentGame = gameObj; // Keeps updating to the latest completed game
-      } else if (!nextGame && !isCompleted && gameDate >= now) {
-        // If it's the first non-completed game in the future
+      } else if (!nextGame && !isCompleted) {
         nextGame = gameObj;
       }
     });
@@ -318,7 +351,7 @@ async function main() {
     if (seasonYear === 2025) {
       seasonRecord = "13-2";
     } else {
-      seasonRecord = scheduleData.team?.record?.[0]?.displayValue || "0-0";
+      seasonRecord = extractRecord(teamDetails?.team) || extractRecord(scheduleData?.team) || "0-0";
     }
 
     if (nextGame) {
@@ -331,8 +364,8 @@ async function main() {
           const opponentData = await fetchJson(
             `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${nextGame.opponentId}`
           );
-          opponentStanding = opponentData?.team?.standingSummary || "";
-          opponentRecord = opponentData?.team?.record?.[0]?.displayValue || "0-0";
+          opponentStanding = extractStanding(opponentData?.team);
+          opponentRecord = extractRecord(opponentData?.team);
         } catch (error) {
           console.error(`Error fetching opponent details for ID ${nextGame.opponentId}:`, error);
         }
@@ -340,6 +373,14 @@ async function main() {
 
       nextGame.opponentStanding = opponentStanding;
       nextGame.opponentRecord = opponentRecord;
+    }
+
+    if (finalSchedule.length > 0 && nextGame) {
+      finalSchedule[0].opposingTeam.record = nextGame.opponentRecord;
+      finalSchedule[0].opposingTeam.standing = nextGame.opponentStanding;
+      finalSchedule[0].opponentRecord = nextGame.opponentRecord;
+      finalSchedule[0].opponentStanding = nextGame.opponentStanding;
+      finalSchedule[0].oleMissStanding = nextGame.oleMissStanding;
     }
 
     const payload = {

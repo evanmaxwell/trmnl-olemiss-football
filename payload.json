@@ -1,5 +1,5 @@
 {
-  "rank": 4,
+  "rank": 9,
   "season": 2026,
   "record": "3-1",
   "standingSummary": "6th in SEC",
@@ -264,7 +264,7 @@
         "name": "Missouri Tigers",
         "abbrev": "MIZ",
         "curatedRank": {
-          "current": 19
+          "current": 25
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
@@ -360,7 +360,7 @@
         "name": "Mississippi State Bulldogs",
         "abbrev": "MSST",
         "curatedRank": {
-          "current": 24
+          "current": 16
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"

@@ -22,8 +22,8 @@
   "next_game": {
     "name": "Ole Miss Rebels at Vanderbilt Commodores",
     "shortName": "MISS @ VAN",
-    "date": "Sat, Oct 10 at TBD",
-    "rawDate": "2026-10-10T04:00Z",
+    "date": "Sat, Oct 10, 3:30 PM EDT",
+    "rawDate": "2026-10-10T19:30Z",
     "isCompleted": false,
     "opponentId": "238",
     "opponentName": "Vanderbilt Commodores",
@@ -32,8 +32,8 @@
     "homeAway": "@",
     "outcome": "",
     "score": "",
-    "network": "TBD",
-    "statusStr": "TBD",
+    "network": "ESPN",
+    "statusStr": "10/10 - 3:30 PM EDT",
     "oleMissStanding": "6th in SEC",
     "opponentStanding": "10th in SEC",
     "opponentRecord": "3-1"
@@ -106,8 +106,8 @@
     {
       "name": "Ole Miss Rebels at Vanderbilt Commodores",
       "shortName": "MISS @ VAN",
-      "date": "Sat, Oct 10 at TBD",
-      "rawDate": "2026-10-10T04:00Z",
+      "date": "Sat, Oct 10, 3:30 PM EDT",
+      "rawDate": "2026-10-10T19:30Z",
       "isCompleted": false,
       "opponentId": "238",
       "opponentName": "Vanderbilt Commodores",
@@ -116,8 +116,8 @@
       "homeAway": "@",
       "outcome": "",
       "score": "",
-      "network": "TBD",
-      "statusStr": "TBD",
+      "network": "ESPN",
+      "statusStr": "10/10 - 3:30 PM EDT",
       "oleMissStanding": "6th in SEC",
       "opponentStanding": "10th in SEC",
       "opponentRecord": "3-1"
@@ -251,8 +251,8 @@
         "record": "3-1",
         "standing": "10th in SEC"
       },
-      "date": "Sat, Oct 10 at TBD",
-      "location": "Nashville, TN | TBD",
+      "date": "Sat, Oct 10, 3:30 PM EDT",
+      "location": "Nashville, TN | ESPN",
       "opponentRecord": "3-1",
       "opponentStanding": "10th in SEC",
       "oleMissStanding": "6th in SEC"

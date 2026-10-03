@@ -35,8 +35,8 @@
     "network": "ESPN",
     "statusStr": "10/10 - 3:30 PM EDT",
     "oleMissStanding": "6th in SEC",
-    "opponentStanding": "10th in SEC",
-    "opponentRecord": "3-1"
+    "opponentStanding": "14th in SEC",
+    "opponentRecord": "3-2"
   },
   "all_games": [
     {
@@ -119,8 +119,8 @@
       "network": "ESPN",
       "statusStr": "10/10 - 3:30 PM EDT",
       "oleMissStanding": "6th in SEC",
-      "opponentStanding": "10th in SEC",
-      "opponentRecord": "3-1"
+      "opponentStanding": "14th in SEC",
+      "opponentRecord": "3-2"
     },
     {
       "name": "Missouri Tigers at Ole Miss Rebels",
@@ -248,13 +248,13 @@
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png"
         },
-        "record": "3-1",
-        "standing": "10th in SEC"
+        "record": "3-2",
+        "standing": "14th in SEC"
       },
       "date": "Sat, Oct 10, 3:30 PM EDT",
       "location": "Nashville, TN | ESPN",
-      "opponentRecord": "3-1",
-      "opponentStanding": "10th in SEC",
+      "opponentRecord": "3-2",
+      "opponentStanding": "14th in SEC",
       "oleMissStanding": "6th in SEC"
     },
     {

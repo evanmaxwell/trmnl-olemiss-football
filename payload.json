@@ -2,7 +2,7 @@
   "rank": 9,
   "season": 2026,
   "record": "3-1",
-  "standingSummary": "6th in SEC",
+  "standingSummary": "7th in SEC",
   "most_recent_game": {
     "name": "Ole Miss Rebels at Florida Gators",
     "shortName": "MISS @ FLA",
@@ -34,7 +34,7 @@
     "score": "",
     "network": "ESPN",
     "statusStr": "10/10 - 3:30 PM EDT",
-    "oleMissStanding": "6th in SEC",
+    "oleMissStanding": "7th in SEC",
     "opponentStanding": "14th in SEC",
     "opponentRecord": "3-2"
   },
@@ -118,7 +118,7 @@
       "score": "",
       "network": "ESPN",
       "statusStr": "10/10 - 3:30 PM EDT",
-      "oleMissStanding": "6th in SEC",
+      "oleMissStanding": "7th in SEC",
       "opponentStanding": "14th in SEC",
       "opponentRecord": "3-2"
     },
@@ -255,7 +255,7 @@
       "location": "Nashville, TN | ESPN",
       "opponentRecord": "3-2",
       "opponentStanding": "14th in SEC",
-      "oleMissStanding": "6th in SEC"
+      "oleMissStanding": "7th in SEC"
     },
     {
       "isCompleted": false,

@@ -125,8 +125,8 @@
     {
       "name": "Missouri Tigers at Ole Miss Rebels",
       "shortName": "MIZ @ MISS",
-      "date": "Sat, Oct 17 at TBD",
-      "rawDate": "2026-10-17T04:00Z",
+      "date": "Sat, Oct 17, 3:30 PM EDT",
+      "rawDate": "2026-10-17T19:30Z",
       "isCompleted": false,
       "opponentId": "142",
       "opponentName": "Missouri Tigers",
@@ -136,7 +136,7 @@
       "outcome": "",
       "score": "",
       "network": "TBD",
-      "statusStr": "TBD"
+      "statusStr": "10/17 - 3:30 PM EDT"
     },
     {
       "name": "Ole Miss Rebels at Texas Longhorns",
@@ -270,7 +270,7 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
         }
       },
-      "date": "Sat, Oct 17 at TBD",
+      "date": "Sat, Oct 17, 3:30 PM EDT",
       "location": "Oxford, MS | TBD"
     },
     {

@@ -33,9 +33,9 @@
     "outcome": "",
     "score": "",
     "network": "ESPN",
-    "statusStr": "10/10 - 3:30 PM EDT",
+    "statusStr": "1:31 - 2nd",
     "oleMissStanding": "7th in SEC",
-    "opponentStanding": "14th in SEC",
+    "opponentStanding": "15th in SEC",
     "opponentRecord": "3-2"
   },
   "all_games": [
@@ -117,9 +117,9 @@
       "outcome": "",
       "score": "",
       "network": "ESPN",
-      "statusStr": "10/10 - 3:30 PM EDT",
+      "statusStr": "1:31 - 2nd",
       "oleMissStanding": "7th in SEC",
-      "opponentStanding": "14th in SEC",
+      "opponentStanding": "15th in SEC",
       "opponentRecord": "3-2"
     },
     {
@@ -249,12 +249,12 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png"
         },
         "record": "3-2",
-        "standing": "14th in SEC"
+        "standing": "15th in SEC"
       },
       "date": "Sat, Oct 10, 3:30 PM EDT",
       "location": "Nashville, TN | ESPN",
       "opponentRecord": "3-2",
-      "opponentStanding": "14th in SEC",
+      "opponentStanding": "15th in SEC",
       "oleMissStanding": "7th in SEC"
     },
     {

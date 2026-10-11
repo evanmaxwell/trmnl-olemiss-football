@@ -32,7 +32,7 @@
     "homeAway": "vs",
     "outcome": "",
     "score": "",
-    "network": "TBD",
+    "network": "SEC Network",
     "statusStr": "10/17 - 3:30 PM EDT",
     "oleMissStanding": "4th in SEC",
     "opponentStanding": "4th in SEC",
@@ -132,7 +132,7 @@
       "homeAway": "vs",
       "outcome": "",
       "score": "",
-      "network": "TBD",
+      "network": "SEC Network",
       "statusStr": "10/17 - 3:30 PM EDT",
       "oleMissStanding": "4th in SEC",
       "opponentStanding": "4th in SEC",
@@ -252,7 +252,7 @@
         "standing": "4th in SEC"
       },
       "date": "Sat, Oct 17, 3:30 PM EDT",
-      "location": "Oxford, MS | TBD",
+      "location": "Oxford, MS | SEC Network",
       "opponentRecord": "5-1",
       "opponentStanding": "4th in SEC",
       "oleMissStanding": "4th in SEC"

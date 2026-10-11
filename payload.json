@@ -1,42 +1,42 @@
 {
   "rank": 9,
   "season": 2026,
-  "record": "3-1",
-  "standingSummary": "7th in SEC",
+  "record": "4-1",
+  "standingSummary": "4th in SEC",
   "most_recent_game": {
-    "name": "Ole Miss Rebels at Florida Gators",
-    "shortName": "MISS @ FLA",
-    "date": "Sat, Sep 26, 3:30 PM EDT",
-    "rawDate": "2026-09-26T19:30Z",
-    "isCompleted": true,
-    "opponentId": "57",
-    "opponentName": "Florida Gators",
-    "opponentAbbrev": "FLA",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
-    "homeAway": "@",
-    "outcome": "L",
-    "score": "52-28",
-    "network": "ABC",
-    "statusStr": "Final"
-  },
-  "next_game": {
     "name": "Ole Miss Rebels at Vanderbilt Commodores",
     "shortName": "MISS @ VAN",
     "date": "Sat, Oct 10, 3:30 PM EDT",
     "rawDate": "2026-10-10T19:30Z",
-    "isCompleted": false,
+    "isCompleted": true,
     "opponentId": "238",
     "opponentName": "Vanderbilt Commodores",
     "opponentAbbrev": "VAN",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
     "homeAway": "@",
+    "outcome": "W",
+    "score": "52-17",
+    "network": "ESPN",
+    "statusStr": "Final"
+  },
+  "next_game": {
+    "name": "Missouri Tigers at Ole Miss Rebels",
+    "shortName": "MIZ @ MISS",
+    "date": "Sat, Oct 17, 3:30 PM EDT",
+    "rawDate": "2026-10-17T19:30Z",
+    "isCompleted": false,
+    "opponentId": "142",
+    "opponentName": "Missouri Tigers",
+    "opponentAbbrev": "MIZ",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
+    "homeAway": "vs",
     "outcome": "",
     "score": "",
-    "network": "ESPN",
-    "statusStr": "1:31 - 2nd",
-    "oleMissStanding": "7th in SEC",
-    "opponentStanding": "15th in SEC",
-    "opponentRecord": "3-2"
+    "network": "TBD",
+    "statusStr": "10/17 - 3:30 PM EDT",
+    "oleMissStanding": "4th in SEC",
+    "opponentStanding": "4th in SEC",
+    "opponentRecord": "5-1"
   },
   "all_games": [
     {
@@ -108,19 +108,16 @@
       "shortName": "MISS @ VAN",
       "date": "Sat, Oct 10, 3:30 PM EDT",
       "rawDate": "2026-10-10T19:30Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "238",
       "opponentName": "Vanderbilt Commodores",
       "opponentAbbrev": "VAN",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
       "homeAway": "@",
-      "outcome": "",
-      "score": "",
+      "outcome": "W",
+      "score": "52-17",
       "network": "ESPN",
-      "statusStr": "1:31 - 2nd",
-      "oleMissStanding": "7th in SEC",
-      "opponentStanding": "15th in SEC",
-      "opponentRecord": "3-2"
+      "statusStr": "Final"
     },
     {
       "name": "Missouri Tigers at Ole Miss Rebels",
@@ -136,7 +133,10 @@
       "outcome": "",
       "score": "",
       "network": "TBD",
-      "statusStr": "10/17 - 3:30 PM EDT"
+      "statusStr": "10/17 - 3:30 PM EDT",
+      "oleMissStanding": "4th in SEC",
+      "opponentStanding": "4th in SEC",
+      "opponentRecord": "5-1"
     },
     {
       "name": "Ole Miss Rebels at Texas Longhorns",
@@ -238,27 +238,6 @@
   "schedule": [
     {
       "isCompleted": false,
-      "isHomeGame": false,
-      "opposingTeam": {
-        "name": "Vanderbilt Commodores",
-        "abbrev": "VAN",
-        "curatedRank": {
-          "current": 99
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png"
-        },
-        "record": "3-2",
-        "standing": "15th in SEC"
-      },
-      "date": "Sat, Oct 10, 3:30 PM EDT",
-      "location": "Nashville, TN | ESPN",
-      "opponentRecord": "3-2",
-      "opponentStanding": "15th in SEC",
-      "oleMissStanding": "7th in SEC"
-    },
-    {
-      "isCompleted": false,
       "isHomeGame": true,
       "opposingTeam": {
         "name": "Missouri Tigers",
@@ -268,10 +247,15 @@
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
-        }
+        },
+        "record": "5-1",
+        "standing": "4th in SEC"
       },
       "date": "Sat, Oct 17, 3:30 PM EDT",
-      "location": "Oxford, MS | TBD"
+      "location": "Oxford, MS | TBD",
+      "opponentRecord": "5-1",
+      "opponentStanding": "4th in SEC",
+      "oleMissStanding": "4th in SEC"
     },
     {
       "isCompleted": false,

@@ -2,7 +2,7 @@
   "rank": 9,
   "season": 2026,
   "record": "4-1",
-  "standingSummary": "4th in SEC",
+  "standingSummary": "1st in SEC",
   "most_recent_game": {
     "name": "Ole Miss Rebels at Vanderbilt Commodores",
     "shortName": "MISS @ VAN",
@@ -34,8 +34,8 @@
     "score": "",
     "network": "SEC Network",
     "statusStr": "10/17 - 3:30 PM EDT",
-    "oleMissStanding": "4th in SEC",
-    "opponentStanding": "4th in SEC",
+    "oleMissStanding": "1st in SEC",
+    "opponentStanding": "1st in SEC",
     "opponentRecord": "5-1"
   },
   "all_games": [
@@ -134,15 +134,15 @@
       "score": "",
       "network": "SEC Network",
       "statusStr": "10/17 - 3:30 PM EDT",
-      "oleMissStanding": "4th in SEC",
-      "opponentStanding": "4th in SEC",
+      "oleMissStanding": "1st in SEC",
+      "opponentStanding": "1st in SEC",
       "opponentRecord": "5-1"
     },
     {
       "name": "Ole Miss Rebels at Texas Longhorns",
       "shortName": "MISS @ TEX",
-      "date": "Sat, Oct 24 at TBD",
-      "rawDate": "2026-10-24T04:00Z",
+      "date": "Sat, Oct 24, 7:30 PM EDT",
+      "rawDate": "2026-10-24T23:30Z",
       "isCompleted": false,
       "opponentId": "251",
       "opponentName": "Texas Longhorns",
@@ -151,8 +151,8 @@
       "homeAway": "@",
       "outcome": "",
       "score": "",
-      "network": "TBD",
-      "statusStr": "TBD"
+      "network": "ABC",
+      "statusStr": "10/24 - 7:30 PM EDT"
     },
     {
       "name": "Auburn Tigers at Ole Miss Rebels",
@@ -249,13 +249,13 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
         },
         "record": "5-1",
-        "standing": "4th in SEC"
+        "standing": "1st in SEC"
       },
       "date": "Sat, Oct 17, 3:30 PM EDT",
       "location": "Oxford, MS | SEC Network",
       "opponentRecord": "5-1",
-      "opponentStanding": "4th in SEC",
-      "oleMissStanding": "4th in SEC"
+      "opponentStanding": "1st in SEC",
+      "oleMissStanding": "1st in SEC"
     },
     {
       "isCompleted": false,
@@ -270,8 +270,8 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
         }
       },
-      "date": "Sat, Oct 24 at TBD",
-      "location": "Austin, TX | TBD"
+      "date": "Sat, Oct 24, 7:30 PM EDT",
+      "location": "Austin, TX | ABC"
     },
     {
       "isCompleted": false,

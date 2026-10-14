@@ -2,7 +2,7 @@
   "rank": 9,
   "season": 2026,
   "record": "4-1",
-  "standingSummary": "1st in SEC",
+  "standingSummary": "7th in SEC",
   "most_recent_game": {
     "name": "Ole Miss Rebels at Vanderbilt Commodores",
     "shortName": "MISS @ VAN",
@@ -34,8 +34,8 @@
     "score": "",
     "network": "SEC Network",
     "statusStr": "10/17 - 3:30 PM EDT",
-    "oleMissStanding": "1st in SEC",
-    "opponentStanding": "1st in SEC",
+    "oleMissStanding": "7th in SEC",
+    "opponentStanding": "5th in SEC",
     "opponentRecord": "5-1"
   },
   "all_games": [
@@ -134,8 +134,8 @@
       "score": "",
       "network": "SEC Network",
       "statusStr": "10/17 - 3:30 PM EDT",
-      "oleMissStanding": "1st in SEC",
-      "opponentStanding": "1st in SEC",
+      "oleMissStanding": "7th in SEC",
+      "opponentStanding": "5th in SEC",
       "opponentRecord": "5-1"
     },
     {
@@ -249,13 +249,13 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
         },
         "record": "5-1",
-        "standing": "1st in SEC"
+        "standing": "5th in SEC"
       },
       "date": "Sat, Oct 17, 3:30 PM EDT",
       "location": "Oxford, MS | SEC Network",
       "opponentRecord": "5-1",
-      "opponentStanding": "1st in SEC",
-      "oleMissStanding": "1st in SEC"
+      "opponentStanding": "5th in SEC",
+      "oleMissStanding": "7th in SEC"
     },
     {
       "isCompleted": false,

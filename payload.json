@@ -1,5 +1,5 @@
 {
-  "rank": 9,
+  "rank": 7,
   "season": 2026,
   "record": "5-1",
   "standingSummary": "4th in SEC",
@@ -243,7 +243,7 @@
         "name": "Texas Longhorns",
         "abbrev": "TEX",
         "curatedRank": {
-          "current": 7
+          "current": 19
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
@@ -280,7 +280,7 @@
         "name": "Georgia Bulldogs",
         "abbrev": "UGA",
         "curatedRank": {
-          "current": 1
+          "current": 5
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
@@ -328,7 +328,7 @@
         "name": "Mississippi State Bulldogs",
         "abbrev": "MSST",
         "curatedRank": {
-          "current": 16
+          "current": 99
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"

@@ -1,42 +1,42 @@
 {
   "rank": 9,
   "season": 2026,
-  "record": "4-1",
-  "standingSummary": "6th in SEC",
+  "record": "5-1",
+  "standingSummary": "4th in SEC",
   "most_recent_game": {
-    "name": "Ole Miss Rebels at Vanderbilt Commodores",
-    "shortName": "MISS @ VAN",
-    "date": "Sat, Oct 10, 3:30 PM EDT",
-    "rawDate": "2026-10-10T19:30Z",
-    "isCompleted": true,
-    "opponentId": "238",
-    "opponentName": "Vanderbilt Commodores",
-    "opponentAbbrev": "VAN",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
-    "homeAway": "@",
-    "outcome": "W",
-    "score": "52-17",
-    "network": "ESPN",
-    "statusStr": "Final"
-  },
-  "next_game": {
     "name": "Missouri Tigers at Ole Miss Rebels",
     "shortName": "MIZ @ MISS",
     "date": "Sat, Oct 17, 3:30 PM EDT",
     "rawDate": "2026-10-17T19:30Z",
-    "isCompleted": false,
+    "isCompleted": true,
     "opponentId": "142",
     "opponentName": "Missouri Tigers",
     "opponentAbbrev": "MIZ",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
     "homeAway": "vs",
+    "outcome": "W",
+    "score": "31-3",
+    "network": "SEC Network",
+    "statusStr": "Final"
+  },
+  "next_game": {
+    "name": "Ole Miss Rebels at Texas Longhorns",
+    "shortName": "MISS @ TEX",
+    "date": "Sat, Oct 24, 7:30 PM EDT",
+    "rawDate": "2026-10-24T23:30Z",
+    "isCompleted": false,
+    "opponentId": "251",
+    "opponentName": "Texas Longhorns",
+    "opponentAbbrev": "TEX",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+    "homeAway": "@",
     "outcome": "",
     "score": "",
-    "network": "SEC Network",
-    "statusStr": "1:31 - 1st",
-    "oleMissStanding": "6th in SEC",
-    "opponentStanding": "2nd in SEC",
-    "opponentRecord": "5-1"
+    "network": "ABC",
+    "statusStr": "10/24 - 7:30 PM EDT",
+    "oleMissStanding": "4th in SEC",
+    "opponentStanding": "12th in SEC",
+    "opponentRecord": "4-2"
   },
   "all_games": [
     {
@@ -124,19 +124,16 @@
       "shortName": "MIZ @ MISS",
       "date": "Sat, Oct 17, 3:30 PM EDT",
       "rawDate": "2026-10-17T19:30Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "142",
       "opponentName": "Missouri Tigers",
       "opponentAbbrev": "MIZ",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
       "homeAway": "vs",
-      "outcome": "",
-      "score": "",
+      "outcome": "W",
+      "score": "31-3",
       "network": "SEC Network",
-      "statusStr": "1:31 - 1st",
-      "oleMissStanding": "6th in SEC",
-      "opponentStanding": "2nd in SEC",
-      "opponentRecord": "5-1"
+      "statusStr": "Final"
     },
     {
       "name": "Ole Miss Rebels at Texas Longhorns",
@@ -152,7 +149,10 @@
       "outcome": "",
       "score": "",
       "network": "ABC",
-      "statusStr": "10/24 - 7:30 PM EDT"
+      "statusStr": "10/24 - 7:30 PM EDT",
+      "oleMissStanding": "4th in SEC",
+      "opponentStanding": "12th in SEC",
+      "opponentRecord": "4-2"
     },
     {
       "name": "Auburn Tigers at Ole Miss Rebels",
@@ -238,27 +238,6 @@
   "schedule": [
     {
       "isCompleted": false,
-      "isHomeGame": true,
-      "opposingTeam": {
-        "name": "Missouri Tigers",
-        "abbrev": "MIZ",
-        "curatedRank": {
-          "current": 13
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png"
-        },
-        "record": "5-1",
-        "standing": "2nd in SEC"
-      },
-      "date": "Sat, Oct 17, 3:30 PM EDT",
-      "location": "Oxford, MS | SEC Network",
-      "opponentRecord": "5-1",
-      "opponentStanding": "2nd in SEC",
-      "oleMissStanding": "6th in SEC"
-    },
-    {
-      "isCompleted": false,
       "isHomeGame": false,
       "opposingTeam": {
         "name": "Texas Longhorns",
@@ -268,10 +247,15 @@
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
-        }
+        },
+        "record": "4-2",
+        "standing": "12th in SEC"
       },
       "date": "Sat, Oct 24, 7:30 PM EDT",
-      "location": "Austin, TX | ABC"
+      "location": "Austin, TX | ABC",
+      "opponentRecord": "4-2",
+      "opponentStanding": "12th in SEC",
+      "oleMissStanding": "4th in SEC"
     },
     {
       "isCompleted": false,

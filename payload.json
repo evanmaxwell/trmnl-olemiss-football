@@ -157,8 +157,8 @@
     {
       "name": "Auburn Tigers at Ole Miss Rebels",
       "shortName": "AUB @ MISS",
-      "date": "Sat, Oct 31 at TBD",
-      "rawDate": "2026-10-31T04:00Z",
+      "date": "Sat, Oct 31, 12:45 PM EDT",
+      "rawDate": "2026-10-31T16:45Z",
       "isCompleted": false,
       "opponentId": "2",
       "opponentName": "Auburn Tigers",
@@ -167,8 +167,8 @@
       "homeAway": "vs",
       "outcome": "",
       "score": "",
-      "network": "TBD",
-      "statusStr": "TBD"
+      "network": "SEC Network",
+      "statusStr": "10/31 - 12:45 PM EDT"
     },
     {
       "name": "Georgia Bulldogs at Ole Miss Rebels",
@@ -270,8 +270,8 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png"
         }
       },
-      "date": "Sat, Oct 31 at TBD",
-      "location": "Oxford, MS | TBD"
+      "date": "Sat, Oct 31, 12:45 PM EDT",
+      "location": "Oxford, MS | SEC Network"
     },
     {
       "isCompleted": false,

@@ -2,7 +2,7 @@
   "rank": 7,
   "season": 2026,
   "record": "5-1",
-  "standingSummary": "4th in SEC",
+  "standingSummary": "3rd in SEC",
   "most_recent_game": {
     "name": "Missouri Tigers at Ole Miss Rebels",
     "shortName": "MIZ @ MISS",
@@ -33,9 +33,9 @@
     "outcome": "",
     "score": "",
     "network": "ABC",
-    "statusStr": "10/24 - 7:30 PM EDT",
-    "oleMissStanding": "4th in SEC",
-    "opponentStanding": "12th in SEC",
+    "statusStr": "0:21 - 4th",
+    "oleMissStanding": "3rd in SEC",
+    "opponentStanding": "13th in SEC",
     "opponentRecord": "4-2"
   },
   "all_games": [
@@ -149,9 +149,9 @@
       "outcome": "",
       "score": "",
       "network": "ABC",
-      "statusStr": "10/24 - 7:30 PM EDT",
-      "oleMissStanding": "4th in SEC",
-      "opponentStanding": "12th in SEC",
+      "statusStr": "0:21 - 4th",
+      "oleMissStanding": "3rd in SEC",
+      "opponentStanding": "13th in SEC",
       "opponentRecord": "4-2"
     },
     {
@@ -249,13 +249,13 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
         },
         "record": "4-2",
-        "standing": "12th in SEC"
+        "standing": "13th in SEC"
       },
       "date": "Sat, Oct 24, 7:30 PM EDT",
       "location": "Austin, TX | ABC",
       "opponentRecord": "4-2",
-      "opponentStanding": "12th in SEC",
-      "oleMissStanding": "4th in SEC"
+      "opponentStanding": "13th in SEC",
+      "oleMissStanding": "3rd in SEC"
     },
     {
       "isCompleted": false,

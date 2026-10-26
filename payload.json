@@ -173,8 +173,8 @@
     {
       "name": "Georgia Bulldogs at Ole Miss Rebels",
       "shortName": "UGA @ MISS",
-      "date": "Sat, Nov 7 at TBD",
-      "rawDate": "2026-11-07T05:00Z",
+      "date": "Sat, Nov 7, 7:30 PM EST",
+      "rawDate": "2026-11-08T00:30Z",
       "isCompleted": false,
       "opponentId": "61",
       "opponentName": "Georgia Bulldogs",
@@ -183,8 +183,8 @@
       "homeAway": "vs",
       "outcome": "",
       "score": "",
-      "network": "TBD",
-      "statusStr": "TBD"
+      "network": "ABC",
+      "statusStr": "11/7 - 7:30 PM EST"
     },
     {
       "name": "Ole Miss Rebels at Oklahoma Sooners",
@@ -270,8 +270,8 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
         }
       },
-      "date": "Sat, Nov 7 at TBD",
-      "location": "Oxford, MS | TBD"
+      "date": "Sat, Nov 7, 7:30 PM EST",
+      "location": "Oxford, MS | ABC"
     },
     {
       "isCompleted": false,

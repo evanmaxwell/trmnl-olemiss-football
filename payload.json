@@ -1,42 +1,42 @@
 {
   "rank": 12,
   "season": 2026,
-  "record": "5-2",
-  "standingSummary": "4th in SEC",
+  "record": "6-2",
+  "standingSummary": "3rd in SEC",
   "most_recent_game": {
-    "name": "Ole Miss Rebels at Texas Longhorns",
-    "shortName": "MISS @ TEX",
-    "date": "Sat, Oct 24, 7:30 PM EDT",
-    "rawDate": "2026-10-24T23:30Z",
-    "isCompleted": true,
-    "opponentId": "251",
-    "opponentName": "Texas Longhorns",
-    "opponentAbbrev": "TEX",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
-    "homeAway": "@",
-    "outcome": "L",
-    "score": "34-27",
-    "network": "ABC",
-    "statusStr": "Final"
-  },
-  "next_game": {
     "name": "Auburn Tigers at Ole Miss Rebels",
     "shortName": "AUB @ MISS",
     "date": "Sat, Oct 31, 12:45 PM EDT",
     "rawDate": "2026-10-31T16:45Z",
-    "isCompleted": false,
+    "isCompleted": true,
     "opponentId": "2",
     "opponentName": "Auburn Tigers",
     "opponentAbbrev": "AUB",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
     "homeAway": "vs",
+    "outcome": "W",
+    "score": "45-15",
+    "network": "SEC Network",
+    "statusStr": "Final"
+  },
+  "next_game": {
+    "name": "Georgia Bulldogs at Ole Miss Rebels",
+    "shortName": "UGA @ MISS",
+    "date": "Sat, Nov 7, 7:30 PM EST",
+    "rawDate": "2026-11-08T00:30Z",
+    "isCompleted": false,
+    "opponentId": "61",
+    "opponentName": "Georgia Bulldogs",
+    "opponentAbbrev": "UGA",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+    "homeAway": "vs",
     "outcome": "",
     "score": "",
-    "network": "SEC Network",
-    "statusStr": "13:13 - 1st",
-    "oleMissStanding": "4th in SEC",
-    "opponentStanding": "11th in SEC",
-    "opponentRecord": "4-3"
+    "network": "ABC",
+    "statusStr": "11/7 - 7:30 PM EST",
+    "oleMissStanding": "3rd in SEC",
+    "opponentStanding": "2nd in SEC",
+    "opponentRecord": "6-1"
   },
   "all_games": [
     {
@@ -156,19 +156,16 @@
       "shortName": "AUB @ MISS",
       "date": "Sat, Oct 31, 12:45 PM EDT",
       "rawDate": "2026-10-31T16:45Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "2",
       "opponentName": "Auburn Tigers",
       "opponentAbbrev": "AUB",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
       "homeAway": "vs",
-      "outcome": "",
-      "score": "",
+      "outcome": "W",
+      "score": "45-15",
       "network": "SEC Network",
-      "statusStr": "13:13 - 1st",
-      "oleMissStanding": "4th in SEC",
-      "opponentStanding": "11th in SEC",
-      "opponentRecord": "4-3"
+      "statusStr": "Final"
     },
     {
       "name": "Georgia Bulldogs at Ole Miss Rebels",
@@ -184,7 +181,10 @@
       "outcome": "",
       "score": "",
       "network": "ABC",
-      "statusStr": "11/7 - 7:30 PM EST"
+      "statusStr": "11/7 - 7:30 PM EST",
+      "oleMissStanding": "3rd in SEC",
+      "opponentStanding": "2nd in SEC",
+      "opponentRecord": "6-1"
     },
     {
       "name": "Ole Miss Rebels at Oklahoma Sooners",
@@ -240,27 +240,6 @@
       "isCompleted": false,
       "isHomeGame": true,
       "opposingTeam": {
-        "name": "Auburn Tigers",
-        "abbrev": "AUB",
-        "curatedRank": {
-          "current": 99
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png"
-        },
-        "record": "4-3",
-        "standing": "11th in SEC"
-      },
-      "date": "Sat, Oct 31, 12:45 PM EDT",
-      "location": "Oxford, MS | SEC Network",
-      "opponentRecord": "4-3",
-      "opponentStanding": "11th in SEC",
-      "oleMissStanding": "4th in SEC"
-    },
-    {
-      "isCompleted": false,
-      "isHomeGame": true,
-      "opposingTeam": {
         "name": "Georgia Bulldogs",
         "abbrev": "UGA",
         "curatedRank": {
@@ -268,10 +247,15 @@
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
-        }
+        },
+        "record": "6-1",
+        "standing": "2nd in SEC"
       },
       "date": "Sat, Nov 7, 7:30 PM EST",
-      "location": "Oxford, MS | ABC"
+      "location": "Oxford, MS | ABC",
+      "opponentRecord": "6-1",
+      "opponentStanding": "2nd in SEC",
+      "oleMissStanding": "3rd in SEC"
     },
     {
       "isCompleted": false,

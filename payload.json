@@ -35,8 +35,8 @@
     "network": "ABC",
     "statusStr": "11/7 - 7:30 PM EST",
     "oleMissStanding": "3rd in SEC",
-    "opponentStanding": "2nd in SEC",
-    "opponentRecord": "6-1"
+    "opponentStanding": "1st in SEC",
+    "opponentRecord": "7-1"
   },
   "all_games": [
     {
@@ -183,8 +183,8 @@
       "network": "ABC",
       "statusStr": "11/7 - 7:30 PM EST",
       "oleMissStanding": "3rd in SEC",
-      "opponentStanding": "2nd in SEC",
-      "opponentRecord": "6-1"
+      "opponentStanding": "1st in SEC",
+      "opponentRecord": "7-1"
     },
     {
       "name": "Ole Miss Rebels at Oklahoma Sooners",
@@ -248,13 +248,13 @@
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
         },
-        "record": "6-1",
-        "standing": "2nd in SEC"
+        "record": "7-1",
+        "standing": "1st in SEC"
       },
       "date": "Sat, Nov 7, 7:30 PM EST",
       "location": "Oxford, MS | ABC",
-      "opponentRecord": "6-1",
-      "opponentStanding": "2nd in SEC",
+      "opponentRecord": "7-1",
+      "opponentStanding": "1st in SEC",
       "oleMissStanding": "3rd in SEC"
     },
     {

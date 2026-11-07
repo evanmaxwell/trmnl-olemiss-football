@@ -2,7 +2,7 @@
   "rank": 12,
   "season": 2026,
   "record": "6-2",
-  "standingSummary": "3rd in SEC",
+  "standingSummary": "4th in SEC",
   "most_recent_game": {
     "name": "Auburn Tigers at Ole Miss Rebels",
     "shortName": "AUB @ MISS",
@@ -34,7 +34,7 @@
     "score": "",
     "network": "ABC",
     "statusStr": "11/7 - 7:30 PM EST",
-    "oleMissStanding": "3rd in SEC",
+    "oleMissStanding": "4th in SEC",
     "opponentStanding": "1st in SEC",
     "opponentRecord": "7-1"
   },
@@ -182,7 +182,7 @@
       "score": "",
       "network": "ABC",
       "statusStr": "11/7 - 7:30 PM EST",
-      "oleMissStanding": "3rd in SEC",
+      "oleMissStanding": "4th in SEC",
       "opponentStanding": "1st in SEC",
       "opponentRecord": "7-1"
     },
@@ -255,7 +255,7 @@
       "location": "Oxford, MS | ABC",
       "opponentRecord": "7-1",
       "opponentStanding": "1st in SEC",
-      "oleMissStanding": "3rd in SEC"
+      "oleMissStanding": "4th in SEC"
     },
     {
       "isCompleted": false,

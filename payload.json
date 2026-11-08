@@ -1,42 +1,42 @@
 {
   "rank": 12,
   "season": 2026,
-  "record": "6-2",
-  "standingSummary": "4th in SEC",
+  "record": "6-3",
+  "standingSummary": "6th in SEC",
   "most_recent_game": {
-    "name": "Auburn Tigers at Ole Miss Rebels",
-    "shortName": "AUB @ MISS",
-    "date": "Sat, Oct 31, 12:45 PM EDT",
-    "rawDate": "2026-10-31T16:45Z",
-    "isCompleted": true,
-    "opponentId": "2",
-    "opponentName": "Auburn Tigers",
-    "opponentAbbrev": "AUB",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
-    "homeAway": "vs",
-    "outcome": "W",
-    "score": "45-15",
-    "network": "SEC Network",
-    "statusStr": "Final"
-  },
-  "next_game": {
     "name": "Georgia Bulldogs at Ole Miss Rebels",
     "shortName": "UGA @ MISS",
     "date": "Sat, Nov 7, 7:30 PM EST",
     "rawDate": "2026-11-08T00:30Z",
-    "isCompleted": false,
+    "isCompleted": true,
     "opponentId": "61",
     "opponentName": "Georgia Bulldogs",
     "opponentAbbrev": "UGA",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
     "homeAway": "vs",
+    "outcome": "L",
+    "score": "42-7",
+    "network": "ABC",
+    "statusStr": "Final"
+  },
+  "next_game": {
+    "name": "Ole Miss Rebels at Oklahoma Sooners",
+    "shortName": "MISS @ OU",
+    "date": "Sat, Nov 14 at TBD",
+    "rawDate": "2026-11-14T05:00Z",
+    "isCompleted": false,
+    "opponentId": "201",
+    "opponentName": "Oklahoma Sooners",
+    "opponentAbbrev": "OU",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
+    "homeAway": "@",
     "outcome": "",
     "score": "",
-    "network": "ABC",
-    "statusStr": "11/7 - 7:30 PM EST",
-    "oleMissStanding": "4th in SEC",
-    "opponentStanding": "1st in SEC",
-    "opponentRecord": "7-1"
+    "network": "TBD",
+    "statusStr": "TBD",
+    "oleMissStanding": "6th in SEC",
+    "opponentStanding": "10th in SEC",
+    "opponentRecord": "5-4"
   },
   "all_games": [
     {
@@ -172,19 +172,16 @@
       "shortName": "UGA @ MISS",
       "date": "Sat, Nov 7, 7:30 PM EST",
       "rawDate": "2026-11-08T00:30Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "61",
       "opponentName": "Georgia Bulldogs",
       "opponentAbbrev": "UGA",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
       "homeAway": "vs",
-      "outcome": "",
-      "score": "",
+      "outcome": "L",
+      "score": "42-7",
       "network": "ABC",
-      "statusStr": "11/7 - 7:30 PM EST",
-      "oleMissStanding": "4th in SEC",
-      "opponentStanding": "1st in SEC",
-      "opponentRecord": "7-1"
+      "statusStr": "Final"
     },
     {
       "name": "Ole Miss Rebels at Oklahoma Sooners",
@@ -200,7 +197,10 @@
       "outcome": "",
       "score": "",
       "network": "TBD",
-      "statusStr": "TBD"
+      "statusStr": "TBD",
+      "oleMissStanding": "6th in SEC",
+      "opponentStanding": "10th in SEC",
+      "opponentRecord": "5-4"
     },
     {
       "name": "Wofford Terriers at Ole Miss Rebels",
@@ -238,27 +238,6 @@
   "schedule": [
     {
       "isCompleted": false,
-      "isHomeGame": true,
-      "opposingTeam": {
-        "name": "Georgia Bulldogs",
-        "abbrev": "UGA",
-        "curatedRank": {
-          "current": 2
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"
-        },
-        "record": "7-1",
-        "standing": "1st in SEC"
-      },
-      "date": "Sat, Nov 7, 7:30 PM EST",
-      "location": "Oxford, MS | ABC",
-      "opponentRecord": "7-1",
-      "opponentStanding": "1st in SEC",
-      "oleMissStanding": "4th in SEC"
-    },
-    {
-      "isCompleted": false,
       "isHomeGame": false,
       "opposingTeam": {
         "name": "Oklahoma Sooners",
@@ -268,10 +247,15 @@
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
-        }
+        },
+        "record": "5-4",
+        "standing": "10th in SEC"
       },
       "date": "Sat, Nov 14 at TBD",
-      "location": "Norman, OK | TBD"
+      "location": "Norman, OK | TBD",
+      "opponentRecord": "5-4",
+      "opponentStanding": "10th in SEC",
+      "oleMissStanding": "6th in SEC"
     },
     {
       "isCompleted": false,

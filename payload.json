@@ -22,8 +22,8 @@
   "next_game": {
     "name": "Ole Miss Rebels at Oklahoma Sooners",
     "shortName": "MISS @ OU",
-    "date": "Sat, Nov 14, 4:15 PM EST",
-    "rawDate": "2026-11-14T21:15Z",
+    "date": "Sun, Nov 15, 1:00 PM EST",
+    "rawDate": "2026-11-15T18:00Z",
     "isCompleted": false,
     "opponentId": "201",
     "opponentName": "Oklahoma Sooners",
@@ -32,8 +32,8 @@
     "homeAway": "@",
     "outcome": "",
     "score": "",
-    "network": "SEC Network",
-    "statusStr": "11/14 - 4:15 PM EST",
+    "network": "TBD",
+    "statusStr": "11/15 - 1:00 PM EST",
     "oleMissStanding": "6th in SEC",
     "opponentStanding": "10th in SEC",
     "opponentRecord": "5-4"
@@ -186,8 +186,8 @@
     {
       "name": "Ole Miss Rebels at Oklahoma Sooners",
       "shortName": "MISS @ OU",
-      "date": "Sat, Nov 14, 4:15 PM EST",
-      "rawDate": "2026-11-14T21:15Z",
+      "date": "Sun, Nov 15, 1:00 PM EST",
+      "rawDate": "2026-11-15T18:00Z",
       "isCompleted": false,
       "opponentId": "201",
       "opponentName": "Oklahoma Sooners",
@@ -196,8 +196,8 @@
       "homeAway": "@",
       "outcome": "",
       "score": "",
-      "network": "SEC Network",
-      "statusStr": "11/14 - 4:15 PM EST",
+      "network": "TBD",
+      "statusStr": "11/15 - 1:00 PM EST",
       "oleMissStanding": "6th in SEC",
       "opponentStanding": "10th in SEC",
       "opponentRecord": "5-4"
@@ -251,8 +251,8 @@
         "record": "5-4",
         "standing": "10th in SEC"
       },
-      "date": "Sat, Nov 14, 4:15 PM EST",
-      "location": "Norman, OK | SEC Network",
+      "date": "Sun, Nov 15, 1:00 PM EST",
+      "location": "Norman, OK | TBD",
       "opponentRecord": "5-4",
       "opponentStanding": "10th in SEC",
       "oleMissStanding": "6th in SEC"

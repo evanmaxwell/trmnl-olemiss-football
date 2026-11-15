@@ -1,42 +1,42 @@
 {
-  "rank": 19,
+  "rank": 16,
   "season": 2026,
-  "record": "6-3",
+  "record": "6-4",
   "standingSummary": "6th in SEC",
   "most_recent_game": {
-    "name": "Georgia Bulldogs at Ole Miss Rebels",
-    "shortName": "UGA @ MISS",
-    "date": "Sat, Nov 7, 7:30 PM EST",
-    "rawDate": "2026-11-08T00:30Z",
-    "isCompleted": true,
-    "opponentId": "61",
-    "opponentName": "Georgia Bulldogs",
-    "opponentAbbrev": "UGA",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
-    "homeAway": "vs",
-    "outcome": "L",
-    "score": "42-7",
-    "network": "ABC",
-    "statusStr": "Final"
-  },
-  "next_game": {
     "name": "Ole Miss Rebels at Oklahoma Sooners",
     "shortName": "MISS @ OU",
     "date": "Sun, Nov 15, 1:00 PM EST",
     "rawDate": "2026-11-15T18:00Z",
-    "isCompleted": false,
+    "isCompleted": true,
     "opponentId": "201",
     "opponentName": "Oklahoma Sooners",
     "opponentAbbrev": "OU",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
     "homeAway": "@",
+    "outcome": "L",
+    "score": "24-17",
+    "network": "SEC Network",
+    "statusStr": "Final"
+  },
+  "next_game": {
+    "name": "Wofford Terriers at Ole Miss Rebels",
+    "shortName": "WOF @ MISS",
+    "date": "Sat, Nov 21, 12:00 PM EST",
+    "rawDate": "2026-11-21T17:00Z",
+    "isCompleted": false,
+    "opponentId": "2747",
+    "opponentName": "Wofford Terriers",
+    "opponentAbbrev": "WOF",
+    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
+    "homeAway": "vs",
     "outcome": "",
     "score": "",
-    "network": "SEC Network",
-    "statusStr": "11/15 - 1:00 PM EST",
+    "network": "SECN+",
+    "statusStr": "11/21 - 12:00 PM EST",
     "oleMissStanding": "6th in SEC",
-    "opponentStanding": "8th in SEC",
-    "opponentRecord": "5-4"
+    "opponentStanding": "7th in Southern",
+    "opponentRecord": "5-6"
   },
   "all_games": [
     {
@@ -188,19 +188,16 @@
       "shortName": "MISS @ OU",
       "date": "Sun, Nov 15, 1:00 PM EST",
       "rawDate": "2026-11-15T18:00Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "201",
       "opponentName": "Oklahoma Sooners",
       "opponentAbbrev": "OU",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
       "homeAway": "@",
-      "outcome": "",
-      "score": "",
+      "outcome": "L",
+      "score": "24-17",
       "network": "SEC Network",
-      "statusStr": "11/15 - 1:00 PM EST",
-      "oleMissStanding": "6th in SEC",
-      "opponentStanding": "8th in SEC",
-      "opponentRecord": "5-4"
+      "statusStr": "Final"
     },
     {
       "name": "Wofford Terriers at Ole Miss Rebels",
@@ -216,7 +213,10 @@
       "outcome": "",
       "score": "",
       "network": "SECN+",
-      "statusStr": "11/21 - 12:00 PM EST"
+      "statusStr": "11/21 - 12:00 PM EST",
+      "oleMissStanding": "6th in SEC",
+      "opponentStanding": "7th in Southern",
+      "opponentRecord": "5-6"
     },
     {
       "name": "Mississippi State Bulldogs at Ole Miss Rebels",
@@ -238,27 +238,6 @@
   "schedule": [
     {
       "isCompleted": false,
-      "isHomeGame": false,
-      "opposingTeam": {
-        "name": "Oklahoma Sooners",
-        "abbrev": "OU",
-        "curatedRank": {
-          "current": 99
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
-        },
-        "record": "5-4",
-        "standing": "8th in SEC"
-      },
-      "date": "Sun, Nov 15, 1:00 PM EST",
-      "location": "Norman, OK | SEC Network",
-      "opponentRecord": "5-4",
-      "opponentStanding": "8th in SEC",
-      "oleMissStanding": "6th in SEC"
-    },
-    {
-      "isCompleted": false,
       "isHomeGame": true,
       "opposingTeam": {
         "name": "Wofford Terriers",
@@ -268,10 +247,15 @@
         },
         "images": {
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png"
-        }
+        },
+        "record": "5-6",
+        "standing": "7th in Southern"
       },
       "date": "Sat, Nov 21, 12:00 PM EST",
-      "location": "Oxford, MS | SECN+"
+      "location": "Oxford, MS | SECN+",
+      "opponentRecord": "5-6",
+      "opponentStanding": "7th in Southern",
+      "oleMissStanding": "6th in SEC"
     },
     {
       "isCompleted": false,

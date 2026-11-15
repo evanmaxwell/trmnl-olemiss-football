@@ -35,7 +35,7 @@
     "network": "SEC Network",
     "statusStr": "11/15 - 1:00 PM EST",
     "oleMissStanding": "6th in SEC",
-    "opponentStanding": "10th in SEC",
+    "opponentStanding": "8th in SEC",
     "opponentRecord": "5-4"
   },
   "all_games": [
@@ -199,7 +199,7 @@
       "network": "SEC Network",
       "statusStr": "11/15 - 1:00 PM EST",
       "oleMissStanding": "6th in SEC",
-      "opponentStanding": "10th in SEC",
+      "opponentStanding": "8th in SEC",
       "opponentRecord": "5-4"
     },
     {
@@ -249,12 +249,12 @@
           "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
         },
         "record": "5-4",
-        "standing": "10th in SEC"
+        "standing": "8th in SEC"
       },
       "date": "Sun, Nov 15, 1:00 PM EST",
       "location": "Norman, OK | SEC Network",
       "opponentRecord": "5-4",
-      "opponentStanding": "10th in SEC",
+      "opponentStanding": "8th in SEC",
       "oleMissStanding": "6th in SEC"
     },
     {

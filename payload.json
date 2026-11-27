@@ -1,42 +1,23 @@
 {
   "rank": 23,
   "season": 2026,
-  "record": "7-4",
-  "standingSummary": "5th in SEC",
+  "record": "8-4",
+  "standingSummary": "7th in SEC",
   "most_recent_game": {
-    "name": "Wofford Terriers at Ole Miss Rebels",
-    "shortName": "WOF @ MISS",
-    "date": "Sat, Nov 21, 12:00 PM EST",
-    "rawDate": "2026-11-21T17:00Z",
-    "isCompleted": true,
-    "opponentId": "2747",
-    "opponentName": "Wofford Terriers",
-    "opponentAbbrev": "WOF",
-    "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
-    "homeAway": "vs",
-    "outcome": "W",
-    "score": "59-17",
-    "network": "SECN+",
-    "statusStr": "Final"
-  },
-  "next_game": {
     "name": "Mississippi State Bulldogs at Ole Miss Rebels",
     "shortName": "MSST @ MISS",
     "date": "Fri, Nov 27, 12:00 PM EST",
     "rawDate": "2026-11-27T17:00Z",
-    "isCompleted": false,
+    "isCompleted": true,
     "opponentId": "344",
     "opponentName": "Mississippi State Bulldogs",
     "opponentAbbrev": "MSST",
     "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
     "homeAway": "vs",
-    "outcome": "",
-    "score": "",
+    "outcome": "W",
+    "score": "41-17",
     "network": "ABC",
-    "statusStr": "11/27 - 12:00 PM EST",
-    "oleMissStanding": "5th in SEC",
-    "opponentStanding": "13th in SEC",
-    "opponentRecord": "5-6"
+    "statusStr": "Final"
   },
   "all_games": [
     {
@@ -220,44 +201,19 @@
       "shortName": "MSST @ MISS",
       "date": "Fri, Nov 27, 12:00 PM EST",
       "rawDate": "2026-11-27T17:00Z",
-      "isCompleted": false,
+      "isCompleted": true,
       "opponentId": "344",
       "opponentName": "Mississippi State Bulldogs",
       "opponentAbbrev": "MSST",
       "opponentLogo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
       "homeAway": "vs",
-      "outcome": "",
-      "score": "",
+      "outcome": "W",
+      "score": "41-17",
       "network": "ABC",
-      "statusStr": "11/27 - 12:00 PM EST",
-      "oleMissStanding": "5th in SEC",
-      "opponentStanding": "13th in SEC",
-      "opponentRecord": "5-6"
+      "statusStr": "Final"
     }
   ],
-  "schedule": [
-    {
-      "isCompleted": false,
-      "isHomeGame": true,
-      "opposingTeam": {
-        "name": "Mississippi State Bulldogs",
-        "abbrev": "MSST",
-        "curatedRank": {
-          "current": 99
-        },
-        "images": {
-          "small": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png"
-        },
-        "record": "5-6",
-        "standing": "13th in SEC"
-      },
-      "date": "Fri, Nov 27, 12:00 PM EST",
-      "location": "Oxford, MS | ABC",
-      "opponentRecord": "5-6",
-      "opponentStanding": "13th in SEC",
-      "oleMissStanding": "5th in SEC"
-    }
-  ],
+  "schedule": [],
   "images": {
     "default": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png"
   },
